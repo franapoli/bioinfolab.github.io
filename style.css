@@ -1,3 +1,13 @@
 ---
 layout: style
 ---
+
+#team .row.justify-content-center {
+    display: flex;
+    justify-content: center;
+}
+
+.team-member {
+    margin-bottom: 30px;
+}
+Th
