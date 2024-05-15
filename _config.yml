@@ -1,11 +1,5 @@
 url: "https://franapoli.github.io"
 baseurl: "/bioinfolab.github.io"
-<<<<<<< HEAD
-=======
-
-url: https://y7kim.github.io
-baseurl: /agency-jekyll-theme/
->>>>>>> 95514926f6b9384bc7ec26a7860341974d7b4005
 
 # Site settings
 title: Awesome Title
