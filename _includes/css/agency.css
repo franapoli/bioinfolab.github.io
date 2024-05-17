@@ -406,8 +406,8 @@ section h3.section-subheading {
     margin: 0 auto;
     padding: 25px;
     max-width: 400px;
-    text-align: center;
     background-color: #fff;
+    text-transform: none !important;
 }
 
 #portfolio .portfolio-item .portfolio-caption h4 {
@@ -420,10 +420,13 @@ section h3.section-subheading {
     font-family: {{ site.data.template.font.secondary }};
     font-size: 16px;
     font-style: italic;
+    text-transform: none !important;
 }
 
 #portfolio * {
     z-index: 2;
+    text-transform: none !important;
+    font-weight: normal !important;
 }
 
 @media(min-width:767px) {

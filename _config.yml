@@ -3,7 +3,7 @@ baseurl: "/bioinfolab.github.io"
 
 # Site settings
 title: Bioinformatics Lab @ UniSannio
-email: your-email@domain.com
+email: frnapolitano@unisannio.it
 description: "Laboratory of Bioinformatics at University of Sannio"
 
 
@@ -31,6 +31,28 @@ people:
 #    - title: linkedin
 #      url: #
 
+people2:
+- name: Antonio Ammendola
+  pic: 3
+  position: PhD student
+- name: Luca Faretra
+  pic: 3
+  position: Postgraduate Fellow
+- name: Diana Parente
+  pic: 4
+  position: Intern
+
+people3:
+- name: Donatella Pierri
+  pic: 4
+  position: Bachelor student
+- name: Felicita Masone
+  pic: 4
+  position: Bachelor student
+- name: Francesco Saccomando Ciaramella
+  pic: 3
+  position: Intern, Bachelor student
+
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
@@ -52,4 +74,7 @@ address:
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: true
 permalink: pretty
