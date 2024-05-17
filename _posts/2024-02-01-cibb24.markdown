@@ -1,0 +1,12 @@
+---
+title: We are hosting CIBB 2024!
+layout: news
+modal-id: cibb
+img: logo_cibb.png
+thumbnail: logo_cibb.png
+category: news
+pinned: true
+description: We are organizing the 19th conference on Computational Intelligence
+  methods for Bioinformatics and Biostatistics. Find more info at
+  <a href="http://cibb2024.unisannio.it">http://cibb2024.unisannio.it</a>!
+---

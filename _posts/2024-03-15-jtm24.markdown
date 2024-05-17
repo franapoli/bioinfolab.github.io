@@ -1,0 +1,21 @@
+---
+title: Identification of therapeutic targets in osteoarthritis by combining heterogeneous transcriptional datasets, drug-induced expression profiles, and known drug-target interactions expression data
+layout: publication
+modal-id: jtm
+img: jtm24.png
+thumbnail: jtm24.png
+journal: Journal of Translational Medicine
+posturl: https://link.springer.com/article/10.1186/s12967-024-05006-z
+description:
+  <b>Background</b><br>
+
+  Osteoarthritis (OA) is a multifactorial, hypertrophic, and degenerative condition involving the whole joint and affecting a high percentage of middle-aged people. It is due to a combination of factors, although the pivotal mechanisms underlying the disease are still obscure. Moreover, current treatments are still poorly effective, and patients experience a painful and degenerative disease course.
+  <br><b>Methods</b><br>
+  We used an integrative approach that led us to extract a consensus signature from a meta-analysis of three different OA cohorts. We performed a network-based drug prioritization to detect the most relevant drugs targeting these genes and validated in vitro the most promising candidates. We also proposed a risk score based on a minimal set of genes to predict the OA clinical stage from RNA-Seq data.
+
+  <br><b>Results</b><br>
+  We derived a consensus signature of 44 genes that we validated on an independent dataset. Using network analysis, we identified Resveratrol, Tenoxicam, Benzbromarone, Pirinixic Acid, and Mesalazine as putative drugs of interest for therapeutics in OA for anti-inflammatory properties. We also derived a list of seven gene-targets validated with functional RT-qPCR assays, confirming the in silico predictions. Finally, we identified a predictive subset of genes composed of DNER, TNFSF11, THBS3, LOXL3, TSPAN2, DYSF, ASPN and HTRA1 to compute the patient’s risk score. We validated this risk score on an independent dataset with a high AUC (0.875) and compared it with the same approach computed using the entire consensus signature (AUC 0.922).
+
+  Conclusions
+  The consensus signature highlights crucial mechanisms for disease progression. Moreover, these genes were associated with several candidate drugs that could represent potential innovative therapeutics. Furthermore, the patient’s risk scores can be used in clinical settings.
+---
