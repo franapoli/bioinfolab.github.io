@@ -655,9 +655,22 @@ section h3.section-subheading {
     margin-top: 0;
 }
 
-aside.clients img {
-    margin: 50px auto;
+.clients .img-responsive {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
 }
+
+.clients .col-md-1, .clients .col-sm-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Optional: Adjust margin for vertical spacing if needed */
+aside.clients img {
+    margin: 20px auto; /* Adjust top/bottom margin as needed */
+}
+
 
 section#contact {
     background-color: #222;

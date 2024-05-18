@@ -10,3 +10,59 @@ layout: style
 .team-member {
     margin-bottom: 30px;
 }
+
+#clients .row.justify-content-center {
+    display: flex;
+    justify-content: center;
+}
+
+
+.clients .img-fluid {
+  max-width: 100px; /* Set a fixed max-width for all images */
+  height: auto;    /* Maintain aspect ratio */
+}
+
+.clients .col-md-1, .clients .col-sm-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px; /* Add padding if needed */
+}
+
+.team-member-hover {
+  position: relative;
+  cursor: pointer;
+}
+
+.team-member-hover img {
+  border-radius: 50%; /* Ensuring the image is round */
+  transition: transform 0.3s ease;
+}
+
+.team-member-hover .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 50%; /* Ensuring the overlay is round */
+}
+
+.team-member-hover .plus-sign {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.team-member-hover:hover .overlay {
+  opacity: 1;
+}
+
+.team-member-hover:hover img {
+  transform: scale(1.1); /* Slight zoom effect */
+}
