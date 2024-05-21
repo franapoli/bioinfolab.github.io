@@ -3,8 +3,6 @@ title: AI identifies potent inducers of breast cancer stem cell differentiation 
 layout: publication
 img: bbae207f2.jpg
 thumbnail: bbae207f2.jpg
-modal-id: bbae
 journal: Briefings in Bioinformatics
-posturl: https://academic.oup.com/bib/article/25/3/bbae207/7663424
-description: Cancer stem cells (CSCs) are a subpopulation of cancer cells within tumors that exhibit stem-like properties and represent a potentially effective therapeutic target toward long-term remission by means of differentiation induction. By leveraging an artificial intelligence approach solely based on transcriptomics data, this study scored a large library of small molecules based on their predicted ability to induce differentiation in stem-like cells. In particular, a deep neural network model was trained using publicly available single-cell RNA-Seq data obtained from untreated human-induced pluripotent stem cells at various differentiation stages and subsequently utilized to screen drug-induced gene expression profiles from the Library of Integrated Network-based Cellular Signatures (LINCS) database. The challenge of adapting such different data domains was tackled by devising an adversarial learning approach that was able to effectively identify and remove domain-specific bias during the training phase. Experimental validation in MDA-MB-231 and MCF7 cells demonstrated the efficacy of five out of six tested molecules among those scored highest by the model. In particular, the efficacy of triptolide, OTS-167, quinacrine, granisetron and A-443654 offer a potential avenue for targeted therapies against breast CSCs.
+link: https://academic.oup.com/bib/article/25/3/bbae207/7663424
 ---

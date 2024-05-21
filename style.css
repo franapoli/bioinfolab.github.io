@@ -77,3 +77,10 @@ layout: style
 .team-member-hover:hover img {
   transform: scale(1.1); /* Slight zoom effect */
 }
+
+<style>
+.modal-body p {
+    text-align: left;
+}
+</style>
+

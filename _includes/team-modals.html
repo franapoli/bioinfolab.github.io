@@ -1,6 +1,7 @@
 <!-- Team Modals -->
-{% capture team_counter %}0{% endcapture %}
-{% for member in site.people %}
+{% assign team_counter = 0 %}
+{% assign all_members = site.team | sort: "order" %}
+{% for member in all_members %}
     {% assign team_counter = team_counter | plus: 1 %}
     <div class="portfolio-modal modal fade" id="teamModal{{ team_counter }}" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -15,96 +16,8 @@
                         <div class="modal-body">
                             <h2>{{ member.name }}</h2>
                             <hr class="star-primary">
-                            <img width="40%" src="img/team/{{ member.pic }}.jpg" class="img-responsive img-centered" alt="{{ member.name }}">
-                            <p style="text-align: left;">{{ member.bio }}</p>
-                            <ul class="list-inline item-details">
-                                <li>Position:
-                                    <strong>{{ member.position }}</strong>
-                                </li>
-                                {% if member.social %}
-                                <li>Social:
-                                    <ul class="list-inline">
-                                        {% for network in member.social %}
-                                        <li>
-                                            <a href="{{ network.url }}">
-                                                <i class="fa fa-{{ network.title }}"></i>
-                                            </a>
-                                        </li>
-                                        {% endfor %}
-                                    </ul>
-                                </li>
-                                {% endif %}
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-{% endfor %}
-
-{% for member in site.people2 %}
-    {% assign team_counter = team_counter | plus: 1 %}
-    <div class="portfolio-modal modal fade" id="teamModal{{ team_counter }}" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl"></div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>{{ member.name }}</h2>
-                            <hr class="star-primary">
-                            <img width="40%" src="img/team/{{ member.pic }}.jpg" class="img-responsive img-centered" alt="{{ member.name }}">
-                            <p style="text-align: left;">{{ member.bio }}</p>
-                            <ul class="list-inline item-details">
-                                <li>Position:
-                                    <strong>{{ member.position }}</strong>
-                                </li>
-                                {% if member.social %}
-                                <li>Social:
-                                    <ul class="list-inline">
-                                        {% for network in member.social %}
-                                        <li>
-                                            <a href="{{ network.url }}">
-                                                <i class="fa fa-{{ network.title }}"></i>
-                                            </a>
-                                        </li>
-                                        {% endfor %}
-                                    </ul>
-                                </li>
-                                {% endif %}
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-{% endfor %}
-
-{% for member in site.people3 %}
-    {% assign team_counter = team_counter | plus: 1 %}
-    <div class="portfolio-modal modal fade" id="teamModal{{ team_counter }}" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl"></div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>{{ member.name }}</h2>
-                            <hr class="star-primary">
-                            <img width="40%" src="img/team/{{ member.pic }}.jpg" class="img-responsive img-centered" alt="{{ member.name }}">
-                            <p style="text-align: left;">{{ member.bio }}</p>
+                            <img width="40%" src="{{ site.baseurl }}/img/team/{{ member.pic }}.jpg" class="img-responsive img-centered" alt="{{ member.name }}">
+                            <p style="text-align: left !important;">{{ member.content }}</p>
                             <ul class="list-inline item-details">
                                 <li>Position:
                                     <strong>{{ member.position }}</strong>

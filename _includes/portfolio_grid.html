@@ -8,90 +8,52 @@
             </div>
         </div>
         <div class="row">
-          {% assign pinned_posts = site.posts | where: 'pinned', true %}
-          {% for post in pinned_posts %}
-                      {% if post.layout == "publication" %}
-                <!-- Publication Layout -->
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                      <p class="text-muted">
-                        <i class="fa fa-thumb-tack"></i> <!-- Pinned Post Icon -->
-                        <i class="fa fa-book"></i> <!-- Publication Post Icon -->
-                        {{ post.date | date_to_string}}</p>
-                        <h5><i>"{{ post.title }}"</i>, in <strong style="font-weight: 700 !important;">{{ post.journal }}</strong></h5>
-                    </div>
-                </div>
-            {% elsif post.layout == "news" %}
-                <!-- News Layout -->
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                      <p class="text-muted">
-                        <i class="fa fa-thumb-tack"></i> <!-- Pinned Post Icon -->
-                        <i class="fa fa-newspaper-o"></i> <!-- News Post Icon -->
-                        {{ post.date | date_to_string}}</p>
-                        <h5>{{ post.title }}</h5>
-                        <p>{{ post.description }}</p>
-                    </div>
-                </div>
-            {% endif %}
-        {% endfor %}
+          {% assign posts = site.posts | sort: 'pinned' | reverse %}
 
-        {% assign all_posts = site.posts | where_exp: "post", "post.pinned != true" %}
-        {% for post in all_posts %}
-            {% if post.layout == "publication" %}
-                <!-- Publication Layout -->
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                      <p class="text-muted">
-                <i class="fa fa-book"></i> <!-- Journal Publication Icon -->
-                        {{ post.date | date_to_string}}</p>
-                      <h5><i>"{{ post.title }}"</i>, in <strong style="font-weight: 700 !important;">{{ post.journal }}</strong></h5>
-                    </div>
+          {% for post in posts %}
+            <div class="col-md-4 col-sm-6 portfolio-item">
+              {% if post.modal == true %}
+                <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
+                  <div class="portfolio-hover">
+                      <div class="portfolio-hover-content">
+                          <i class="fa fa-plus fa-3x"></i>
+                      </div>
+                  </div>
+                  <img src="img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
+                </a>
+              {% else %}
+                <a href="{{ post.link }}" class="portfolio-link" target="_blank">
+                  <div class="portfolio-hover">
+                      <div class="portfolio-hover-content">
+                          <i class="fa fa-external-link fa-3x"></i>
+                      </div>
+                  </div>
+                  <img src="img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
+                </a>
+              {% endif %}
+                <div class="portfolio-caption">
+                  <p class="text-muted">
+                    {% if post.pinned %}
+                      <i class="fa fa-thumb-tack"></i> <!-- Pinned Post Icon -->
+                    {% endif %}
+                    {% if post.layout == "publication" %}
+                      <i class="fa fa-book"></i> <!-- Publication Post Icon -->
+                      {{ post.date | date_to_string }}
+                    </p>
+                    <h5><i>"{{ post.title }}"</i>, in <strong style="font-weight: 700 !important;">{{ post.journal }}</strong></h5>
+                    {% elsif post.layout == "news" %}
+                      <i class="fa fa-newspaper-o"></i> <!-- News Post Icon -->
+                      {{ post.date | date_to_string }}
+                    </p>
+                    <h5>{{ post.title }}</h5>
+                    <!-- <p>{{ post.description }}</p> -->
+                    {% endif %}
+                    {% unless post.modal %}
+                      <p>{{ post.description }}</p>
+                    {% endunless %}
                 </div>
-            {% elsif post.layout == "news" %}
-                <!-- News Layout -->
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                      <p class="text-muted"><i class="fa fa-newspaper-o"></i> <!-- News Post Icon -->
-                      {{ post.date | date_to_string}}</p>
-                        <h5>{{ post.title }}</h5>
-                        <p>{{ post.description }}</p>
-                    </div>
-                </div>
-            {% endif %}
-        {% endfor %}
+            </div>
+          {% endfor %}
         </div>
     </div>
 </section>

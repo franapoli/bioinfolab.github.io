@@ -1,21 +1,31 @@
 <!-- Team Section -->
-{% capture team_counter %}0{% endcapture %}
+{% assign team_counter = 0 %}
 <section id="team" class="bg-light-gray">
     <div class="container">
+        <!-- Section Heading -->
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">People</h2>
+            </div>
+        </div>
+
+        <!-- Section Subheading for Current Members -->
+        <div class="row">
+            <div class="col-lg-12 text-center">
                 <h3 class="section-subheading text-muted"><br></h3>
                 <h3 class="section-subheading text-muted">Current members</h3>
             </div>
         </div>
+
+        <!-- Head Members -->
         <div class="row justify-content-center">
-            {% for member in site.people %}
+            {% assign head_members = site.team | where: "group", "head" | sort: "order" %}
+            {% for member in head_members %}
                 {% assign team_counter = team_counter | plus: 1 %}
                 <div class="col-sm-2 col-6 text-center">
                     <div class="team-member">
                         <div class="team-member-hover" data-toggle="modal" data-target="#teamModal{{ team_counter }}">
-                            <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
+                            <img src="{{ site.baseurl }}/img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
                             <div class="overlay">
                                 <div class="plus-sign">
                                     <i class="fa fa-plus fa-3x"></i>
@@ -37,13 +47,16 @@
                 </div>
             {% endfor %}
         </div>
+
+        <!-- Current Members (excluding Head Members) -->
         <div class="row justify-content-center">
-            {% for member in site.people2 %}
+            {% assign current_members = site.team | where: "group", "current" | sort: "order" %}
+            {% for member in current_members %}
                 {% assign team_counter = team_counter | plus: 1 %}
                 <div class="col-sm-2 col-6 text-center">
                     <div class="team-member">
                         <div class="team-member-hover" data-toggle="modal" data-target="#teamModal{{ team_counter }}">
-                            <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
+                            <img src="{{ site.baseurl }}/img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
                             <div class="overlay">
                                 <div class="plus-sign">
                                     <i class="fa fa-plus fa-3x"></i>
@@ -65,19 +78,24 @@
                 </div>
             {% endfor %}
         </div>
+
+        <!-- Section Subheading for Former Members -->
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h3 class="section-subheading text-muted"><br></h3>
                 <h3 class="section-subheading text-muted">Former members</h3>
             </div>
         </div>
+
+        <!-- Former Members -->
         <div class="row justify-content-center">
-            {% for member in site.people3 %}
+            {% assign former_members = site.team | where: "group", "former" | sort: "order" %}
+            {% for member in former_members %}
                 {% assign team_counter = team_counter | plus: 1 %}
                 <div class="col-sm-2 col-6 text-center">
                     <div class="team-member">
                         <div class="team-member-hover" data-toggle="modal" data-target="#teamModal{{ team_counter }}">
-                            <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
+                            <img src="{{ site.baseurl }}/img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
                             <div class="overlay">
                                 <div class="plus-sign">
                                     <i class="fa fa-plus fa-3x"></i>
@@ -99,6 +117,8 @@
                 </div>
             {% endfor %}
         </div>
+
+        <!-- Footer Section -->
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <p class="large text-muted"></p>
