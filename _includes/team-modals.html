@@ -17,11 +17,17 @@
                             <h2>{{ member.name }}</h2>
                             <hr class="star-primary">
                             <img width="40%" src="{{ site.baseurl }}/img/team/{{ member.pic }}.jpg" class="img-responsive img-centered" alt="{{ member.name }}">
-                            <p style="text-align: left !important;">{{ member.content }}</p>
                             <ul class="list-inline item-details">
-                                <li>Position:
-                                    <strong>{{ member.position }}</strong>
+                                <li><strong>Position</strong>:
+                                    {{ member.position }}
                                 </li>
+                                {% if member.github %}
+                                <p>
+                                <li><strong>GitHub</strong>:
+                                    <a href="{{ member.github }}">{{ member.github }}</a>
+                                </li>
+                                </p>
+                                {% endif %}
                                 {% if member.social %}
                                 <li>Social:
                                     <ul class="list-inline">
@@ -36,6 +42,7 @@
                                 </li>
                                 {% endif %}
                             </ul>
+                            <p style="text-align: left !important;">{{ member.content }}</p>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
