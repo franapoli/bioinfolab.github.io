@@ -1,6 +1,6 @@
 ---
 name: Francesco Saccomando Ciaramella
-order: 7
+order: 8
 pic: 8
 position: Intern, Bachelor student
 group: former

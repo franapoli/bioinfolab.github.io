@@ -1,6 +1,6 @@
 ---
 name: Felicita Masone
-order: 6
+order: 7
 pic: 6
 position: Bachelor student
 group: former
