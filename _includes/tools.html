@@ -1,0 +1,49 @@
+<!-- Tools Grid Section -->
+<section id="tools" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Tools</h2>
+                <h3 class="section-subheading text-muted"><br></h3>
+            </div>
+        </div>
+        <div class="row">
+            {% for tool in site.tools %}
+                <div class="col-md-4 col-sm-6 tools-item">
+                    <div class="tools-item-wrapper">
+                        {% if tool.modal == true %}
+                            <a href="#portfolioModal{{ tool.modal-id }}" class="tools-link" data-toggle="modal">
+                                <div class="tools-hover">
+                                    <div class="tools-hover-content">
+                                        <i class="fa fa-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="img/tools/{{ tool.thumbnail }}" class="img-responsive img-centered" alt="">
+                            </a>
+                        {% else %}
+                            <a href="{{ tool.link }}" class="tools-link" target="_blank">
+                                <div class="tools-hover">
+                                    <div class="tools-hover-content">
+                                        <i class="fa fa-external-link fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="img/tools/{{ tool.thumbnail }}" class="img-responsive img-centered" alt="">
+                            </a>
+                        {% endif %}
+                        <div class="tools-caption">
+                            <p class="text-muted">
+                                {% if tool.pinned %}
+                                    <i class="fa fa-thumb-tack"></i> <!-- Pinned Post Icon -->
+                                {% endif %}
+                            </p>
+                            <h5><i>{{ tool.title }}</i></h5>
+                            {% unless tool.modal %}
+                                <p>{{ tool.content }}</p>
+                            {% endunless %}
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

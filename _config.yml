@@ -9,6 +9,8 @@ description: "Laboratory of Bioinformatics at University of Sannio"
 collections:
   team:
     output: true
+  tools:
+    output: true
 
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
@@ -26,8 +28,8 @@ social:
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - line: via dei Mulini
+  - line: Benevento, Italy
 
 # Build settings
 markdown: kramdown
