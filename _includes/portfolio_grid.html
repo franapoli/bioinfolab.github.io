@@ -8,7 +8,8 @@
             </div>
         </div>
         <div class="row">
-          {% assign posts = site.posts | sort: 'pinned' | reverse %}
+          {% assign sorted_posts = site.posts | sort: 'date' %}
+          {% assign posts = sorted_posts | sort: 'pinned' | reverse %}
 
           {% for post in posts %}
             <div class="col-md-4 col-sm-6 portfolio-item">
