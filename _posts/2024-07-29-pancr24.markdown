@@ -1,0 +1,8 @@
+---
+title: Altered centriolar cohesion by CEP250 and appendages impact outcome of patients with pancreatic cancer
+layout: publication
+img: pancreatology2024.jpg
+thumbnail: pancreatology2024.jpg
+journal: Pancreatology
+link: https://www.sciencedirect.com/science/article/pii/S1424390324006653
+---
