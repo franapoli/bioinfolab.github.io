@@ -4,7 +4,6 @@ layout: news
 img: logo_cibb.png
 thumbnail: logo_cibb.png
 category: news
-pinned: true
 modal: false
 link: http://cibb2024.unisannio.it
 description: We are organizing the 19th conference on Computational Intelligence
