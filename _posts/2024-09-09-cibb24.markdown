@@ -1,0 +1,12 @@
+---
+title: CIBB 2024 was great!
+layout: news
+img: logo_cibb.png
+thumbnail: logo_cibb.png
+category: news
+modal: false
+link: http://cibb2024.unisannio.it
+description: The 19th conference on Computational Intelligence
+  methods for Bioinformatics and Biostatistics has just finished and was a great success! Find more info (and pictures) at
+  <a href="http://cibb2024.unisannio.it">http://cibb2024.unisannio.it</a>!
+---
