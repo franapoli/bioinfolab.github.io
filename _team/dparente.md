@@ -1,6 +1,6 @@
 ---
 name: Diana Parente
-order: 5
+order: 6
 pic: 9
 position: Intern
 group: current
