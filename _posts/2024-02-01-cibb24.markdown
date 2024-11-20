@@ -6,6 +6,7 @@ thumbnail: logo_cibb.png
 category: news
 modal: false
 link: http://cibb2024.unisannio.it
+pinned: false
 description: We are organizing the 19th conference on Computational Intelligence
   methods for Bioinformatics and Biostatistics. Find more info at
   <a href="http://cibb2024.unisannio.it">http://cibb2024.unisannio.it</a>!

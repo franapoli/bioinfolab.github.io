@@ -1,0 +1,9 @@
+---
+title: Welcome Marco!
+layout: news
+img: ../team/mnigro.jpg
+thumbnail: ../team/mnigro.jpg
+category: news
+modal: false
+description: Marco Nigro just joined our team as a postdoctoral researcher! More about him in the Team section below.
+---

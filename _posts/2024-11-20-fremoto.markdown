@@ -1,0 +1,10 @@
+---
+title: Futuro Remoto
+layout: news
+img: fremoto.png
+thumbnail: fremoto.png
+category: news
+modal: false
+link: https://www.futuroremoto.eu
+description: The lab will be present at FuturoRemoto 2024 to showcase bioinformatics applications to middle and high-school students.
+---
