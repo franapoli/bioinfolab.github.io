@@ -1,0 +1,11 @@
+---
+title: BioinfoLab on UniSannio Magazine
+layout: news
+img: magazine.png
+thumbnail: magazine.png
+category: news
+modal: false
+link: https://unisannio.it/sites/default/files/sito/cover-page/allegati/it/magazine_dicembre_2024.pdf
+pinned: false
+description: What is Bioinformatics and what do we do at UniSannio BioInfolab? We were asked these questions by UniSannio Magazine and were glad to answer!
+---
