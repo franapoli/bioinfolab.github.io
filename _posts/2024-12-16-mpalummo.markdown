@@ -1,0 +1,9 @@
+---
+title: Welcome Martina!
+layout: news
+img: ../team/mpalummo.jpg
+thumbnail: ../team/mpalummo.jpg
+category: news
+modal: false
+description: Martina Palummo just joined our team as a postdoctoral researcher! More about her in the Team section below.
+---

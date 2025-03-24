@@ -1,0 +1,11 @@
+---
+title: Prof. Marieke Kuijjer is visiting us!
+layout: news
+img: marieke.png
+thumbnail: marieke.jpg
+category: news
+modal: false
+link: https://www.kuijjerlab.org/research/
+pinned: false
+description: Marieke Kuijjer, Associate Professor in Cancer Data Science, iCAN Flagship, University of Helsinki, Finland, and Group Leader of the Computational Biology and Systems Medicine group at the Centre for Molecular Biosciences and Medicine Norway (NCMBM), Nordic EMBL Partnership, University of Oslo, Norway, visited our Lab for scientific exchanges. She presented her work on gene networks rewiring in cancer during a seminar to the Department of Science and Technology. This was a very productive exchange!
+---
