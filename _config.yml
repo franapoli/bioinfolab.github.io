@@ -6,6 +6,9 @@ title: Bioinformatics Lab @ UniSannio
 email: frnapolitano@unisannio.it
 description: "Laboratory of Bioinformatics at University of Sannio"
 
+#plugins:
+#  - jekyll-admin
+
 collections:
   team:
     output: true

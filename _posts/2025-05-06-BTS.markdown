@@ -1,0 +1,11 @@
+---
+title: New Master Degree in Health Biotechnologies / Bioinformatics
+layout: news
+img: BTS.png
+thumbnail: BTS.png
+category: news
+modal: false
+link: https://docs.google.com/forms/d/e/1FAIpQLSeAXqrIoVeHnc_L6SkqkVpIGVbP1KkqRklBg0HW6qohkcWLFg/viewform
+pinned: false
+description: A specialization in Bioinformatics is just starting within the framework of the new Master Degree in Health Biotechnologies, starting in Academic Year 2025/26!
+---

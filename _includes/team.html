@@ -53,6 +53,9 @@
             {% assign current_members = site.team | where: "group", "current" | sort: "order" %}
             {% for member in current_members %}
                 {% assign team_counter = team_counter | plus: 1 %}
+                  {% if forloop.index0 != 0 and forloop.index0 % 6 == 0 %}
+      <div class="w-100"></div>
+    {% endif %}
                 <div class="col-sm-2 col-6 text-center">
                     <div class="team-member">
                         <div class="team-member-hover" data-toggle="modal" data-target="#teamModal{{ team_counter }}">
