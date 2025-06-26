@@ -1,6 +1,6 @@
 ---
 name: Luca Faretra
-order: 25
+order: 225
 pic: 7
 position: PhD Student
 group: current
