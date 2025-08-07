@@ -2,7 +2,7 @@
 title: Computational identification of small molecules for increased gene expression by synthetic circuits in mammalian cells
 layout: publication
 journal: Nature Communications
-img: Pisani2025.png
-thumbnail: Pisani2025.png
+img: pisani2025.png
+thumbnail: pisani2025.png
 link: https://link.springer.com/article/10.1038/s41467-025-62529-9
 ---
