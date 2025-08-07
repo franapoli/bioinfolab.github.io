@@ -264,16 +264,24 @@ fieldset[disabled] .btn-xl.active {
         font-size: 1.5em;
     }
 }
-
 header {
     text-align: center;
     color: #fff;
     background-image: url('{{ site.baseurl }}/img/header-bg.jpg');
     background-repeat: no-repeat;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    background-size: 100%;
-    -o-background-size: 100%;
+
+    /* This is the key part */
+    background-size: cover; /* Or 100% 100% if you don't mind distortion */
+    background-position: center;
+
+    /* Set the aspect ratio of the header to match your image */
+    /* Replace 1920 / 1080 with your image's dimensions */
+    aspect-ratio: 1900 / 1049;
+
+    /* Ensure vendor prefixes for older browsers if needed, though aspect-ratio is well-supported */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 header .intro-text {

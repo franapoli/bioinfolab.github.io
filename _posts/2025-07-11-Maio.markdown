@@ -1,0 +1,12 @@
+---
+title: Congratulations Manuel Maio!
+layout: news
+img: graduation.png
+thumbnail: graduation.png
+category: news
+modal: false
+pinned: false
+description: >
+  Manuel obtained his Bachelor Degree in Biotechnology defending a
+  thesis titled "A.I. and Pharmacology: a Knowledge Probing analysis on DeepSeek".
+---

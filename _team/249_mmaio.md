@@ -1,9 +1,9 @@
 ---
 name: Manuel Maio
-order: 249
+order: 349
 pic: 3
 position: Bachelor Student
-group: current
+group: former
 ---
 
-Manuel is a Bachelor Student working on AI Knowledge Probing for Drug Discovery.
+Manuel got his Bachelor Degree in Biotechnology with the thesis "A.I. and Pharmacology: a Knowledge Probing analysis on DeepSeek"
