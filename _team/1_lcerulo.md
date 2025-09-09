@@ -2,7 +2,7 @@
 name: Luigi Cerulo
 order: 1
 pic: 1
-position: Lab Director
+position: Associate Professor<br>Lab Director
 group: head
 ---
 I started doing research as a job around the beginning of the new millennium, focusing on Software Engineering, particularly in software maintenance and evolution. I approached research and teaching at RCOST, a highly intellectually stimulating Research Centre on Software Technology at University of Sannio under the supervision of Gerardo Canfora. From 2003 to 2009, during my PhD and postdoc, I worked mainly on Mining Software Repositories, which was an emerging and very exciting topic in empirical software engineering. Large data repositories on software changes and bug fixes allowed quantitative studies and let researchers to induce new hypothesis and theories or to support/refute existing hypothesis from data. As a main contribution I proposed approaches, still cited in the literature, able to suggest which part of a software system needs to be fixed and who is the best candidate developer to achieve such a task. In 2017, a study on clone evolution, conducted ten years before, received the most influential award.
