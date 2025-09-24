@@ -1,5 +1,5 @@
 ---
-title: Congratulations Chiara Circielli Gabriele!
+title: Congratulations Chiara Circelli Gabriele!
 layout: news
 img: laurea-chiara.png
 thumbnail: laurea-chiara.png
