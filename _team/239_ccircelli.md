@@ -1,9 +1,9 @@
 ---
 name: Chiara Circelli Gabriele
-order: 239
+order: 359
 pic: 4
 position: Bachelor Student
-group: current
+group: former
 ---
 
 Chiara is a Bachelor Student studying transcriptomics in Endometriosis.
