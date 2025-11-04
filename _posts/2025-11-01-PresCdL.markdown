@@ -8,6 +8,6 @@ modal: false
 pinned: false
 description: >
   Prof. Napolitano, co-director of the Bioinformatics Lab, has been appointed
-  Chair of the Bachelor and Master Programs in Biotechnology. His mandate will
-  last 3 years starting today. Good Luck!
+  Chair of the Bachelor’s and Master’s Programs in Biotechnology. His term will
+  last three years starting today. Good luck!
 ---
