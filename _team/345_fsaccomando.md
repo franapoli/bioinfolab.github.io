@@ -2,7 +2,7 @@
 name: Francesco Saccomando Ciaramella
 order: 345
 pic: 8
-position: Intern, Bachelor student
+position: Intern, Bachelor's thesis student
 group: former
 github: https://github.com/orgs/napolitanodst/people/BioFrsk
 ---

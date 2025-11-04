@@ -2,7 +2,7 @@
 name: Erica Cogliano
 order: 237
 pic: 4
-position: Intern
+position: Intern, Master's thesis student
 group: current
 ---
 

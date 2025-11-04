@@ -1,0 +1,13 @@
+---
+title: Prof. Napolitano chairs Biotech Programs
+layout: news
+img: news.png
+thumbnail: news.png
+category: news
+modal: false
+pinned: false
+description: >
+  Prof. Napolitano, co-director of the Bioinformatics Lab, has been appointed
+  Chair of the Bachelor and Master Programs in Biotechnology. His mandate will
+  last 3 years starting today. Good Luck!
+---
