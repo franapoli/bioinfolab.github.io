@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReGenAI — AI for Retinitis Pigmentosa</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            margin: 16px auto 0;
+            background-image: linear-gradient(to right, #0891b2, #3b82f6);
+            border-radius: 2px;
+        }
+        .hero-bg {
+            position: relative;
+            background-color: #0f172a;
+        }
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%231e293b' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493-43 251-217 103-34 107 168 230-50 229-217 103-492 123-554 231-695 365-585 554-394 673-294 573-154 536 40 599 295 764 126.5 879.5'/%3E%3Cpath d='M-34 107L168 230-50 229-217 103-492 123-554 231-695 365-585 554-394 673-294 573-154 536'/%3E%3Cpath d='M40 599L295 764 126.5 879.5'/%3E%3Cpath d='M201 61L-43 251-217 103-34 107 168 230-50 229'/%3E%3Cpath d='M470 94L201 61 40 599-197 493-43 251'/%3E%3Cpath d='M-42 428L-197 493-43 251-217 103-492 123-554 231'/%3E%3Cpath d='M125 511L-42 428-197 493-43 251'/%3E%3Cpath d='M-154 536L125 511-42 428'/%3E%3Cpath d='M-294 573L-154 536'/%3E%3Cpath d='M-394 673L-294 573'/%3E%3Cpath d='M-585 554L-394 673'/%3E%3Cpath d='M-695 365L-585 554'/%3E%3Cpath d='M-554 231L-695 365'/%3E%3Cpath d='M-492 123L-554 231'/%3E%3C/g%3E%3Cg fill='%2338bdf8'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='-43' cy='251' r='5'/%3E%3Ccircle cx='-34' cy='107' r='5'/%3E%3Ccircle cx='168' cy='230' r='5'/%3E%3Ccircle cx='-50' cy='229' r='5'/%3E%3Ccircle cx='-217' cy='103' r='5'/%3E%3Ccircle cx='-492' cy='123' r='5'/%3E%3Ccircle cx='-554' cy='231' r='5'/%3E%3Ccircle cx='-695' cy='365' r='5'/%3E%3Ccircle cx='-585' cy='554' r='5'/%3E%3Ccircle cx='-394' cy='673' r='5'/%3E%3Ccircle cx='-294' cy='573' r='5'/%3E%3Ccircle cx='-154' cy='536' r='5'/%3E%3Ccircle cx='125' cy='511' r='5'/%3E%3Ccircle cx='-42' cy='428' r='5'/%3E%3Ccircle cx='-197' cy='493' r='5'/%3E%3Ccircle cx='201' cy='61' r='5'/%3E%3Ccircle cx='470' cy='94' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='126.5' cy='879.5' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='1037' cy='260.9' r='5'/%3E%3C/g%3E%3C/svg%3E");
+            background-size: cover;
+            opacity: 0.15;
+            z-index: 0;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <div class="min-h-screen">
+      
+      <header class="hero-bg text-white shadow-lg">
+        <div class="hero-content container mx-auto px-6 py-20">
+          <div class="flex flex-col md:flex-row items-center justify-between">
+            <div class="text-center md:text-left">
+              <h1 class="text-5xl lg:text-6xl font-extrabold tracking-tight">ReGenAI</h1>
+              <p class="mt-4 text-xl text-blue-200 max-w-2xl">Drug repositioning for Retinitis Pigmentosa by an artificial intelligence application to single-cell transcriptomics.</p>
+            </div>
+            <div class="flex gap-3 mt-8 md:mt-0">
+              <a href="index-it.html" class="px-4 py-2 rounded-full text-sm font-semibold bg-white/10 hover:bg-white/20 transition-colors duration-300">IT</a>
+              <span class="px-4 py-2 rounded-full text-sm font-semibold bg-white text-blue-800 cursor-default">EN</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section id="project" class="container mx-auto px-6 py-24">
+            <div class="text-center">
+                <h2 class="text-4xl font-bold section-title">The Challenge & Our Mission</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center mt-12">
+                <div class="flex flex-col items-center md:items-start text-center md:text-left">
+                    <svg class="w-16 h-16 mb-4 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.98 8.223A10.477 10.477 0 001.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.45 10.45 0 0112 4.5c4.756 0 8.773 3.162 10.065 7.498a10.523 10.523 0 01-4.293 5.774M6.228 6.228L3 3m3.228 3.228l3.65 3.65m7.894 7.894L21 21m-3.228-3.228l-3.65-3.65m0 0a3 3 0 10-4.243-4.243m4.242 4.242L9.88 9.88" /></svg>
+                    <h3 class="text-2xl font-bold mb-4 text-blue-800">The Challenge</h3>
+                    <p class="text-slate-600 leading-relaxed">Retinitis Pigmentosa (RP) is a group of inherited retinal diseases affecting approximately 1 in 4,000 people. It causes progressive photoreceptor cell loss, leading to irreversible vision impairment and often complete blindness. Despite decades of research, there is still no generalized drug therapy that can halt or reverse the disease's progression.</p>
+                </div>
+                <div class="flex flex-col items-center md:items-start text-center md:text-left">
+                    <svg class="w-16 h-16 mb-4 text-cyan-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 1.087-1-1.087m1.5-1.5V7.5m3 4.5l3-3m0 0l-3-3m3 3H9m6 6.75h.008v.008H15v-.008z" /></svg>
+                    <h3 class="text-2xl font-bold mb-4 text-blue-800">Our Mission</h3>
+                    <p class="text-slate-600 leading-relaxed">The ReGenAI project proposes an innovative approach to address this challenge. Our mission is to leverage cutting-edge artificial intelligence and single-cell genomics to identify existing, approved drugs that can be repurposed to treat Retinitis Pigmentosa, with the goal of significantly accelerating the journey from scientific discovery to clinical application.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="approach" class="bg-white py-24 border-t">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center section-title">A Three-Phase Strategy</h2>
+                <div class="mt-12 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-4">
+                    <div class="p-8 w-full md:w-1/3 bg-slate-50 rounded-xl border border-slate-200 text-center">
+                        <div class="font-bold text-5xl text-blue-200 mb-4">1</div>
+                        <h3 class="font-bold text-xl mb-3 text-blue-800">Decoding the Disease</h3>
+                        <p class="text-sm leading-relaxed text-slate-600">We generate a high-resolution "genetic fingerprint" of RP using single-cell RNA sequencing on the RD10 mouse model.</p>
+                    </div>
+                    <div class="text-blue-400 rotate-90 md:rotate-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" /></svg>
+                    </div>
+                    <div class="p-8 w-full md:w-1/3 bg-slate-50 rounded-xl border border-slate-200 text-center">
+                        <div class="font-bold text-5xl text-blue-200 mb-4">2</div>
+                        <h3 class="font-bold text-xl mb-3 text-blue-800">AI-Powered Discovery</h3>
+                        <p class="text-sm leading-relaxed text-slate-600">Our AI model screens thousands of drugs from the LINCS database to find molecules that can "reverse" the disease fingerprint.</p>
+                    </div>
+                    <div class="text-blue-400 rotate-90 md:rotate-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" /></svg>
+                    </div>
+                    <div class="p-8 w-full md:w-1/3 bg-slate-50 rounded-xl border border-slate-200 text-center">
+                        <div class="font-bold text-5xl text-blue-200 mb-4">3</div>
+                        <h3 class="font-bold text-xl mb-3 text-blue-800">Pre-clinical Validation</h3>
+                        <p class="text-sm leading-relaxed text-slate-600">The top drug candidates are tested on RD10 mice to confirm their efficacy in improving retinal function and structure.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ai-model" class="py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center section-title">How Our AI Works</h2>
+                <div class="mt-12 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-6 items-center text-center">
+                    <div class="col-span-2 space-y-4">
+                        <div class="bg-white p-4 rounded-lg shadow-md border">
+                            <h4 class="font-semibold text-blue-700">Input 1: Disease Data</h4>
+                            <p class="text-xs text-slate-600">scRNAseq profiles from RD10 mouse retinas</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md border">
+                            <h4 class="font-semibold text-cyan-700">Input 2: Drug Data</h4>
+                            <p class="text-xs text-slate-600">LINCS database of drug-induced gene expression</p>
+                        </div>
+                    </div>
+                    <div class="text-slate-400 hidden md:block"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 mx-auto"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" /></svg></div>
+                    <div class="text-slate-400 rotate-90 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 mx-auto"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" /></svg></div>
+                    <div class="col-span-2 bg-slate-800 text-white p-6 rounded-xl shadow-2xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 mx-auto text-blue-400 mb-3"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m1.5-4.5v-1.5m1.5 1.5v1.5m3.75-1.5v1.5m3.75 1.5v-1.5m3.75-1.5v1.5m-1.5-1.5v-1.5m1.5 1.5v1.5M12 6.75v10.5M8.25 6.75v1.5M15.75 6.75v1.5" /></svg>
+                        <h4 class="font-bold text-lg">Adversarial AI Model</h4>
+                        <p class="text-xs text-slate-300 mt-2">The model uses a shared encoder and an adversarial classifier to learn the true biological signature of RP, ignoring dataset-specific noise, and predicts which drugs can reverse it.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="team" class="py-24 bg-white border-t">
+            <div class="container mx-auto px-6">
+              <h2 class="text-4xl font-bold text-center section-title">Meet the Team</h2>
+              <p class="text-center text-slate-600 mt-6 mb-12 max-w-2xl mx-auto">This project is driven by a synergistic collaboration between two highly specialized research units, led by principal investigators with complementary expertise.</p>
+              
+              <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="bg-slate-50 p-8 rounded-xl border border-slate-200">
+                  <h3 class="font-bold text-xl text-blue-900 mb-3">Biomedical Unit — UNINA</h3>
+                  <p class="text-sm text-slate-600">This unit conducts the core biological experiments of the project. Leveraging its state-of-the-art Genomic and Animal Facilities (TIGEM), the team manages the animal models, generates all the single-cell transcriptomic data, and performs the in-vivo validation of the drug candidates identified by the AI, using advanced functional and morphological assays (ERG, OCT).</p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-xl border border-slate-200">
+                  <h3 class="font-bold text-xl text-blue-900 mb-3">Computational Unit — UNISANNIO</h3>
+                  <p class="text-sm text-slate-600">This unit manages the project's computational research. With access to a high-performance Superdome server, the team develops and trains the sophisticated AI model. They are responsible for analyzing the complex single-cell data, prioritizing drug candidates through large-scale virtual screening, and performing the final bioinformatic analysis of treated samples.</p>
+                </div>
+              </div>
+
+              <h3 class="text-3xl font-bold text-center mt-20 mb-12">Principal Investigators</h3>
+              <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                  <div class="bg-slate-50 p-8 rounded-xl border border-slate-200">
+                    <h3 class="font-bold text-lg mb-2">Prof. Michele Pinelli</h3>
+                    <p class="text-xs font-semibold text-blue-700">Associate Professor of Medical Genetics</p>
+                    <p class="text-sm text-slate-600 leading-relaxed mt-4">As the project's PI, Prof. Pinelli coordinates the biomedical and computational efforts. His research focuses on the transcriptomics of the human retina and the diagnosis of rare genetic diseases. His expertise is fundamental for generating high-quality biological data and ensuring the clinical relevance of the project's findings.</p>
+                    <div class="mt-4 text-sm space-x-4">
+                        <a href="https://orcid.org/0000-0002-5927-1185" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">ORCID</a>
+                        <a href="https://scholar.google.nl/citations?user=5vU8xssAAAAJ" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Google Scholar</a>
+                    </div>
+                  </div>
+                  <div class="bg-slate-50 p-8 rounded-xl border border-slate-200">
+                    <h3 class="font-bold text-lg mb-2">Prof. Francesco Napolitano</h3>
+                    <p class="text-xs font-semibold text-blue-700">Associate Professor of Bioinformatics</p>
+                    <p class="text-sm text-slate-600 leading-relaxed mt-4">Prof. Napolitano leads the development of the project's computational strategy. As a Computer Scientist, his work centers on creating innovative machine learning and deep learning models for computational drug discovery. He develops the novel AI tools and analytical pipelines that are essential for identifying therapeutic candidates from complex genomic data.</p>
+                     <div class="mt-4 text-sm space-x-4">
+                        <a href="https://orcid.org/0000-0002-9475-7284" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">ORCID</a>
+                        <a href="https://scholar.google.com/citations?user=L7CNNEoAAAAJ" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Google Scholar</a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+        </section>
+        
+        <section id="news" class="py-24 bg-slate-50 border-t">
+          <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center section-title">Latest News</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+              <div class="bg-white p-6 rounded-xl shadow-md transition-shadow duration-300 hover:shadow-xl">
+                <time class="text-xs font-semibold text-slate-500 uppercase tracking-wider">October 2025</time>
+                <h3 class="font-bold text-lg mt-2 text-blue-900">AI Identifies 6 Potential Drug Candidates</h3>
+                <p class="text-sm text-slate-600 mt-2">The ReGenAI computational model has screened thousands of compounds and identified a shortlist of 6 molecules with high potential to reverse the Retinitis Pigmentosa signature at a cellular level. These candidates are now moving to in vitro testing to validate their efficacy.</p>
+              </div>
+              <div class="bg-white p-6 rounded-xl shadow-md transition-shadow duration-300 hover:shadow-xl">
+                <time class="text-xs font-semibold text-slate-500 uppercase tracking-wider">July 2025</time>
+                <h3 class="font-bold text-lg mt-2 text-blue-900">Advanced AI Model for Drug Prioritization is Ready</h3>
+                <p class="text-sm text-slate-600 mt-2">After months of refinement, the advanced version of our AI model is now complete. It uses a domain adaptation approach to compare the disease signature with a large database of drug-induced genetic profiles, enhancing its predictive power.</p>
+              </div>
+              <div class="bg-white p-6 rounded-xl shadow-md transition-shadow duration-300 hover:shadow-xl">
+                <time class="text-xs font-semibold text-slate-500 uppercase tracking-wider">February 2025</time>
+                <h3 class="font-bold text-lg mt-2 text-blue-900">Foundational AI Model Development is Complete</h3>
+                <p class="text-sm text-slate-600 mt-2">The computational team at UNISANNIO has successfully developed the foundational version of our deep learning model. It can process scRNAseq data and learn the core features of the disease signature.</p>
+              </div>
+              <div class="bg-white p-6 rounded-xl shadow-md transition-shadow duration-300 hover:shadow-xl">
+                <time class="text-xs font-semibold text-slate-500 uppercase tracking-wider">September 2024</time>
+                <h3 class="font-bold text-lg mt-2 text-blue-900">Research Team is Complete</h3>
+                <p class="text-sm text-slate-600 mt-2">We are pleased to announce that the ReGenAI research team is now fully assembled. The research fellows for both biomedical and computational units have been successfully recruited.</p>
+              </div>
+              <div class="bg-white p-6 rounded-xl shadow-md transition-shadow duration-300 hover:shadow-xl">
+                <time class="text-xs font-semibold text-slate-500 uppercase tracking-wider">July 2024</time>
+                <h3 class="font-bold text-lg mt-2 text-blue-900">Key Milestone: Single-Cell Data Generation Complete</h3>
+                <p class="text-sm text-slate-600 mt-2">A major milestone achieved: our biomedical unit at UNINA has completed the generation of high-resolution single-cell RNA sequencing data from RD10 mouse retinas. This dataset forms the foundation for AI model training.</p>
+              </div>
+              <div class="bg-white p-6 rounded-xl shadow-md transition-shadow duration-300 hover:shadow-xl">
+                <time class="text-xs font-semibold text-slate-500 uppercase tracking-wider">November 2023</time>
+                <h3 class="font-bold text-lg mt-2 text-blue-900">Project ReGenAI Kick-off</h3>
+                <p class="text-sm text-slate-600 mt-2">We are thrilled to announce the official start of the ReGenAI project, funded by the Italian Ministry of University and Research under PRIN 2022. The project unites experts in genetics, computational biology, and AI to discover repurposable drugs for Retinitis Pigmentosa.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="funding" class="bg-white py-24 border-t">
+          <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-10">Funding & Support</h2>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-12">
+              <div class="text-center">
+                <h3 class="font-semibold text-lg text-slate-800">Italian Ministry of University and Research (MUR)</h3>
+                <p class="text-sm text-slate-500 mt-1">Funded under the PRIN 2022 program (Prot. 2022ENM9AZ)</p>
+              </div>
+              <div class="text-center">
+                <h3 class="font-semibold text-lg text-slate-800">European Union — NextGenerationEU</h3>
+                <p class="text-sm text-slate-500 mt-1">Supported through the Italian PNRR program</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <footer class="bg-slate-800 text-slate-400 border-t border-slate-700">
+        <div class="container mx-auto px-6 py-8 text-sm text-center">
+            <p class="mb-2">For inquiries, please contact the Principal Investigator: <a href="mailto:michele.pinelli@unina.it" class="hover:text-white underline">michele.pinelli@unina.it</a></p>
+          <p>© 2025 ReGenAI — PRIN 2022 Project (Prot. 2022ENM9AZ). All rights reserved.</p>
+        </div>
+      </footer>
+
+    </div>
+</body>
+</html>

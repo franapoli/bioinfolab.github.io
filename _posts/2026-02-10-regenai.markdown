@@ -1,0 +1,16 @@
+---
+title: RegenAI project close to delivery
+layout: news
+img: regenai.png
+thumbnail: regenai.png
+category: news
+modal: false
+pinned: false
+link: https://franapoli.github.io/bioinfolab.github.io/regen-en.html
+description: >
+  RegenAI is a project co-lead by Prof. Napolitano in collaboration with
+  Federico II Univeristy of Naples and publicly funded as a Project of Relevant
+  National Interest (PRIN). The project aims to identify therapeutic molecules
+  in the context of Retinitis Pigmentosa, a degenerative disease of the eye
+  causing loss of vision. More info at the linked website.
+---
