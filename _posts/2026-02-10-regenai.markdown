@@ -6,7 +6,7 @@ thumbnail: regenai.png
 category: news
 modal: false
 pinned: false
-link: https://franapoli.github.io/bioinfolab.github.io/regen-en.html
+link: https://franapoli.github.io/bioinfolab.github.io/regenai-en.html
 description: >
   RegenAI is a project co-lead by Prof. Napolitano in collaboration with
   Federico II Univeristy of Naples and publicly funded as a Project of Relevant
