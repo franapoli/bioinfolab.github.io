@@ -4,6 +4,7 @@ layout: style
 
 #team .row.justify-content-center {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -35,6 +36,9 @@ layout: style
 }
 
 .team-member-hover img {
+  width: 150px;
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
   border-radius: 50%; /* Ensuring the image is round */
   transition: transform 0.3s ease;
 }

@@ -2,8 +2,8 @@
 name: Diana Parente
 order: 228
 pic: 9
-position: Intern, Bachelor’s thesis student
-group: current
+position: Bachelor student and intern
+group: former
 github: https://github.com/napolitanodst/diana
 ---
 

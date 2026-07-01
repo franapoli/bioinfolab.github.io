@@ -1,6 +1,9 @@
 <!-- Team Modals -->
 {% assign team_counter = 0 %}
-{% assign all_members = site.team | sort: "order" %}
+{% assign head_members = site.team | where: "group", "head" | sort: "order" %}
+{% assign current_members = site.team | where: "group", "current" | sort: "order" %}
+{% assign former_members = site.team | where: "group", "former" | sort: "order" %}
+{% assign all_members = head_members | concat: current_members | concat: former_members %}
 {% for member in all_members %}
     {% assign team_counter = team_counter | plus: 1 %}
     <div class="portfolio-modal modal fade" id="teamModal{{ team_counter }}" tabindex="-1" role="dialog" aria-hidden="true">

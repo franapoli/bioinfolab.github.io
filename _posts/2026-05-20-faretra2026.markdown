@@ -1,0 +1,8 @@
+---
+title: "Decoding exonic intron retention from sequence: an exploratory study in the human genome"
+layout: publication
+img: faretra2026.png
+thumbnail: faretra2026.png
+journal: Frontiers in Bioinformatics
+link: https://www.frontiersin.org/journals/bioinformatics/articles/10.3389/fbinf.2026.1801042/full
+---

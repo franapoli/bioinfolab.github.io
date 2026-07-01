@@ -2,8 +2,8 @@
 name: Martina Palummo
 order: 227
 pic: mpalummo
-position: Postgraduate Fellow
+position: PhD Student
 group: current
 ---
 
-Martina Palummo graduated from the University of Sannio with a master's degreein Genetic and Molecular Biotechnology. She works in the Bioinformatics lab as a research assistent, studying the methylome, mainly in the oncology field. It has been shown that aberrant DNA methylation represents a hallmark of tumorigenesis and can also influence the effectiveness of antineoplastic treatments, because it alters the expression of genes critical for drug response. Understanding how to use DNA methylation data, through computational models, to predict drug response in cancers can improve personalized medicine and promote the discovery of new antineoplastic agents.
+Martina Palummo graduated from the University of Sannio with a master's degree in Genetic and Molecular Biotechnology. She is now a PhD student under the supervision of Prof. Stefano Pagnotta, while continuing to collaborate with the Bioinformatics lab. Her research spans two main lines: the study of the methylome in the context of drug repurposing, and the development of analysis methods for spatial transcriptomics data. On the first front, aberrant DNA methylation is a well-known hallmark of tumorigenesis that can also affect the response to antineoplastic treatments by altering the expression of genes critical for drug action; modeling these methylation patterns computationally can help repurpose existing drugs and identify new antineoplastic agents. On the second front, she works on methods to extract meaningful biological signal from spatial transcriptomics data, which captures gene expression while preserving the spatial organization of tissues, opening new possibilities for understanding tumor heterogeneity and the tissue microenvironment.

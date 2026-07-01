@@ -1,0 +1,19 @@
+---
+title: UniSannio Summer School - Biotech Crime Lab, il DNA non mente
+layout: news
+img: summerschool2026.jpg
+thumbnail: summerschool2026.jpg
+category: news
+modal: true
+description: >
+  Our lab is taking part in the UniSannio Summer School "Scienze e Tecnologie",
+  dedicated this year to crime scene investigation ("Prova a prendermi:
+  dall'analisi delle tracce alla ricostruzione della dinamica del movimento
+  sulla scena del crimine attraverso un approccio scientifico integrato").
+  We are in charge of the closing session, "Biotech Crime Lab: il DNA non
+  mente", on Thursday 16 July 2026 (9:30-12:30), covering the DNA analysis
+  phase of the investigation. Students will get hands-on with the
+  bioinformatics side of forensic genetics in our computer lab, seeing how
+  DNA evidence collected on a crime scene is actually analyzed computationally
+  rather than in a wet lab.
+---
