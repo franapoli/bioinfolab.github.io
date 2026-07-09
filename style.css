@@ -86,6 +86,47 @@ layout: style
   transform: scale(1.1); /* Slight zoom effect */
 }
 
+.thesis-item {
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.thesis-card {
+  background: #fff;
+  border: 1px solid #e7e7e7;
+  border-radius: 4px;
+  padding: 25px;
+  width: 100%;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+
+.thesis-card:hover {
+  box-shadow: 0 4px 14px rgba(0,0,0,.12);
+  transform: translateY(-3px);
+  border-color: #fed136;
+}
+
+.thesis-card h5 {
+  font-weight: 700;
+  margin: 0;
+}
+
+.thesis-card-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.thesis-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
 <style>
 .modal-body p {
     text-align: left;

@@ -1,0 +1,31 @@
+<!-- Theses Modals -->
+{% assign theses = site.theses | sort: 'date' | reverse %}
+{% for thesis in theses %}
+    <div class="portfolio-modal modal fade" id="thesisModal{{ forloop.index }}" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>{{ thesis.title }}</h2>
+                            <hr class="star-primary">
+                            <ul class="list-inline item-details">
+                                <li><strong>Author</strong>: {{ thesis.author }}</li>
+                                <li><strong>Degree</strong>: {{ thesis.degree }}</li>
+                                <li><strong>Academic year</strong>: {{ thesis.academic_year }}</li>
+                            </ul>
+                            <p style="text-align: left !important;">{{ thesis.content }}</p>
+                            <a href="{{ site.baseurl }}/tesi/{{ thesis.file }}" class="btn btn-primary" download><i class="fa fa-download"></i> Download</a>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}
