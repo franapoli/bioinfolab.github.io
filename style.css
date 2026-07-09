@@ -33,6 +33,10 @@ layout: style
 .team-member-hover {
   position: relative;
   cursor: pointer;
+  display: inline-block;
+  width: 150px;
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
 }
 
 .team-member-hover img {
