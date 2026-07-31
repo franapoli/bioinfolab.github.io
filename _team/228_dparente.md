@@ -3,6 +3,7 @@ name: Diana Parente
 order: 228
 pic: 9
 position: Bachelor student and intern
+level: 4
 group: former
 github: https://github.com/napolitanodst/diana
 ---

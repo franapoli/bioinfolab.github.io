@@ -3,6 +3,7 @@ name: Mario Loiola
 order: 360
 pic: mloiola
 position: Bachelor's thesis student
+level: 4
 group: former
 ---
 

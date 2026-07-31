@@ -3,6 +3,7 @@ name: Marco Nigro
 order: 223
 pic: mnigro
 position: Postdoctoral Fellow
+level: 1
 group: former
 github: https://github.com/MarcoN16
 ---

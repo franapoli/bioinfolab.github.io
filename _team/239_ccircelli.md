@@ -3,6 +3,7 @@ name: Chiara Circelli Gabriele
 order: 359
 pic: circelli
 position: Bachelor's thesis student
+level: 4
 group: former
 ---
 

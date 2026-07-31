@@ -3,6 +3,7 @@ name: Francesco Saccomando Ciaramella
 order: 345
 pic: 8
 position: Master student intern
+level: 3
 group: current
 github: https://github.com/orgs/napolitanodst/people/BioFrsk
 ---

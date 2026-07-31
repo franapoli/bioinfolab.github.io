@@ -3,6 +3,7 @@ name: Erica Cogliano
 order: 237
 pic: 4
 position: Master student and intern
+level: 3
 group: former
 ---
 

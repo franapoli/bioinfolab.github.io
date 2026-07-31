@@ -3,6 +3,7 @@ name: Manuel Maio
 order: 349
 pic: 3
 position: Bachelor's thesis student
+level: 4
 group: former
 ---
 

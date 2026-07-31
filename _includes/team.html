@@ -50,7 +50,12 @@
 
         <!-- Current Members (excluding Head Members) -->
         <div class="row justify-content-center">
-            {% assign current_members = site.team | where: "group", "current" | sort: "order" %}
+            {% assign current_group = site.team | where: "group", "current" %}
+            {% assign current_l1 = current_group | where: "level", 1 | sort: "order" %}
+            {% assign current_l2 = current_group | where: "level", 2 | sort: "order" %}
+            {% assign current_l3 = current_group | where: "level", 3 | sort: "order" %}
+            {% assign current_l4 = current_group | where: "level", 4 | sort: "order" %}
+            {% assign current_members = current_l1 | concat: current_l2 | concat: current_l3 | concat: current_l4 %}
             {% for member in current_members %}
                 {% assign team_counter = team_counter | plus: 1 %}
                 <div class="col-sm-3 col-6 text-center">
@@ -89,7 +94,12 @@
 
         <!-- Former Members -->
         <div class="row justify-content-center">
-            {% assign former_members = site.team | where: "group", "former" | sort: "order" %}
+            {% assign former_group = site.team | where: "group", "former" %}
+            {% assign former_l1 = former_group | where: "level", 1 | sort: "order" %}
+            {% assign former_l2 = former_group | where: "level", 2 | sort: "order" %}
+            {% assign former_l3 = former_group | where: "level", 3 | sort: "order" %}
+            {% assign former_l4 = former_group | where: "level", 4 | sort: "order" %}
+            {% assign former_members = former_l1 | concat: former_l2 | concat: former_l3 | concat: former_l4 %}
             {% for member in former_members %}
                 {% assign team_counter = team_counter | plus: 1 %}
                 <div class="col-sm-3 col-6 text-center">

@@ -3,6 +3,7 @@ name: Felicita Masone
 order: 348
 pic: 6
 position: Bachelor's thesis student
+level: 4
 group: former
 github: https://github.com/orgs/napolitanodst/people/Felicita-Mas
 ---

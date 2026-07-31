@@ -3,6 +3,7 @@ name: Mirella Sangiovanni
 order: 236
 pic: msangiovanni
 position: Visiting PhD student
+level: 2
 group: current
 ---
 

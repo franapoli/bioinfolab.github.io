@@ -1,8 +1,21 @@
 <!-- Team Modals -->
 {% assign team_counter = 0 %}
 {% assign head_members = site.team | where: "group", "head" | sort: "order" %}
-{% assign current_members = site.team | where: "group", "current" | sort: "order" %}
-{% assign former_members = site.team | where: "group", "former" | sort: "order" %}
+
+{% assign current_group = site.team | where: "group", "current" %}
+{% assign current_l1 = current_group | where: "level", 1 | sort: "order" %}
+{% assign current_l2 = current_group | where: "level", 2 | sort: "order" %}
+{% assign current_l3 = current_group | where: "level", 3 | sort: "order" %}
+{% assign current_l4 = current_group | where: "level", 4 | sort: "order" %}
+{% assign current_members = current_l1 | concat: current_l2 | concat: current_l3 | concat: current_l4 %}
+
+{% assign former_group = site.team | where: "group", "former" %}
+{% assign former_l1 = former_group | where: "level", 1 | sort: "order" %}
+{% assign former_l2 = former_group | where: "level", 2 | sort: "order" %}
+{% assign former_l3 = former_group | where: "level", 3 | sort: "order" %}
+{% assign former_l4 = former_group | where: "level", 4 | sort: "order" %}
+{% assign former_members = former_l1 | concat: former_l2 | concat: former_l3 | concat: former_l4 %}
+
 {% assign all_members = head_members | concat: current_members | concat: former_members %}
 {% for member in all_members %}
     {% assign team_counter = team_counter | plus: 1 %}

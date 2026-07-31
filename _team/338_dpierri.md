@@ -3,6 +3,7 @@ name: Donatella Pierri
 order: 338
 pic: 5
 position: Bachelor's thesis student
+level: 4
 group: former
 ---
 **Bachelor Thesis title:** Studio del centrosoma attraverso dati disponibili di trascrittomica
