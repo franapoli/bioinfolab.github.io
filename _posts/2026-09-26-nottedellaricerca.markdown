@@ -1,8 +1,8 @@
 ---
 title: The Bioinformatics Lab at the Notte della Ricerca
 layout: news
-img: news.png
-thumbnail: news.png
+img: nottedellaricerca.jpg
+thumbnail: nottedellaricerca.jpg
 category: news
 modal: false
 pinned: false
@@ -11,7 +11,6 @@ description: >
   Our lab took part in the Notte della Ricerca at Palazzo San Domenico,
   UniSannio's Rectorate, with two stands dedicated to genomics and the
   microbiota. Both were a huge success with visitors of all ages, from
-  curious kids to inquisitive grown-ups. Watch the RAI TGR Campania report
-  (featuring UniSannio's other research on show that night) at the link
-  below!
+  curious kids to inquisitive grown-ups. Check out the RAI TGR Campania
+  report, also featuring UniSannio's other research on show that night!
 ---
