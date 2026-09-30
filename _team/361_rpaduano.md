@@ -1,7 +1,7 @@
 ---
 name: Roberto Paduano
 order: 361
-pic: 3
+pic: paduano
 position: Bachelor student and intern
 level: 4
 group: current

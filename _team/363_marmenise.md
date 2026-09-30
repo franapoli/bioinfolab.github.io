@@ -1,7 +1,7 @@
 ---
 name: Maria Chiara Armenise
 order: 363
-pic: "4"
+pic: armenise
 position: Bachelor's thesis student
 level: 4
 group: current

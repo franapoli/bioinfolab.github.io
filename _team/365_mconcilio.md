@@ -1,7 +1,7 @@
 ---
 name: Martina Concilio
 order: 365
-pic: "4"
+pic: concilio
 position: Bachelor's thesis student
 level: 4
 group: current
