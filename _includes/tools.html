@@ -1,15 +1,21 @@
-<!-- Tools Grid Section -->
-<section id="tools">
+<!-- Tools Grid Section: also used for the educational tools (see default layout) -->
+{% assign items = include.items | default: site.tools %}
+{% assign section_id = include.id | default: "tools" %}
+{% assign section_title = include.title | default: "Tools" %}
+{% assign img_dir = include.img_dir | default: "tools" %}
+{% assign col_class = include.col_class | default: "col-md-3 col-sm-6" %}
+<section id="{{ section_id }}" class="tools-section">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Tools</h2>
+                <h2 class="section-heading">{{ section_title }}</h2>
                 <h3 class="section-subheading text-muted"><br></h3>
             </div>
         </div>
-        <div class="row">
-            {% for tool in site.tools %}
-                <div class="col-md-4 col-sm-6 tools-item">
+        <div class="row tools-grid">
+            {% for tool in items %}
+                {% assign main_link = tool.link | default: tool.paper %}
+                <div class="{{ col_class }} tools-item">
                     <div class="tools-item-wrapper">
                         {% if tool.modal == true %}
                             <a href="#portfolioModal{{ tool.modal-id }}" class="tools-link" data-toggle="modal">
@@ -18,16 +24,16 @@
                                         <i class="fa fa-plus fa-3x"></i>
                                     </div>
                                 </div>
-                                <img src="img/tools/{{ tool.thumbnail }}" class="img-responsive img-centered" alt="">
+                                <img src="img/{{ img_dir }}/{{ tool.thumbnail }}" class="img-responsive img-centered" alt="">
                             </a>
                         {% else %}
-                            <a href="{{ tool.link }}" class="tools-link" target="_blank">
+                            <a href="{{ main_link }}" class="tools-link" target="_blank">
                                 <div class="tools-hover">
                                     <div class="tools-hover-content">
                                         <i class="fa fa-external-link fa-3x"></i>
                                     </div>
                                 </div>
-                                <img src="img/tools/{{ tool.thumbnail }}" class="img-responsive img-centered" alt="">
+                                <img src="img/{{ img_dir }}/{{ tool.thumbnail }}" class="img-responsive img-centered" alt="">
                             </a>
                         {% endif %}
                         <div class="tools-caption">
@@ -40,6 +46,12 @@
                             {% unless tool.modal %}
                                 <p>{{ tool.content }}</p>
                             {% endunless %}
+                            {% if tool.link or tool.paper %}
+                                <div class="tools-links">
+                                    {% if tool.link %}<a href="{{ tool.link }}" target="_blank"><i class="fa fa-globe"></i>{{ tool.link_label | default: "Website" }}</a>{% endif %}
+                                    {% if tool.paper %}<a href="{{ tool.paper }}" target="_blank"><i class="fa fa-file-text-o"></i>Paper</a>{% endif %}
+                                </div>
+                            {% endif %}
                         </div>
                     </div>
                 </div>

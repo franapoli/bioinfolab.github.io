@@ -14,6 +14,8 @@ collections:
     output: true
   tools:
     output: true
+  edutools:
+    output: true
   theses:
     output: true
 

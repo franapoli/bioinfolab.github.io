@@ -4,6 +4,8 @@ img: repo.png
 thumbnail: repo.png
 modal: false
 link: https://cran.r-project.org/web/packages/repo/index.html
+link_label: CRAN
+paper: https://doi.org/10.1186/s12859-017-1510-6
 ---
 A data manager for the R environment meant to abstract file system operations. It builds one (or more) centralized repositories where R objects are stored together with rich annotations, including code chunks, allowing for easily searching and retrieving data.
 

@@ -495,19 +495,36 @@ section h3.section-subheading {
 }
 
 /* Tools Grid */
-#tools .tools-item {
+/* Tools grids: flex keeps each row aligned */
+.tools-section .tools-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tools-section .tools-grid .tools-link img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+}
+
+.tools-section .tools-grid:before,
+.tools-section .tools-grid:after {
+    display: none;
+}
+
+.tools-section .tools-item {
     right: 0;
     margin: 0 0 15px;
 }
 
-#tools .tools-item .tools-link {
+.tools-section .tools-item .tools-link {
     display: block;
     position: relative;
     margin: 0 auto;
     max-width: 400px;
 }
 
-#tools .tools-item .tools-link .tools-hover {
+.tools-section .tools-item .tools-link .tools-hover {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -519,11 +536,11 @@ section h3.section-subheading {
     background: rgba({{ site.data.template.color.primary | hex_to_rgb | join: ',' }}, .9);
 }
 
-#tools .tools-item .tools-link:hover .tools-hover {
+.tools-section .tools-item .tools-link:hover .tools-hover {
     opacity: 1;
 }
 
-#tools .tools-item .tools-link .tools-hover .tools-hover-content {
+.tools-section .tools-item .tools-link .tools-hover .tools-hover-content {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -534,16 +551,16 @@ section h3.section-subheading {
     color: #fff;
 }
 
-#tools .tools-item .tools-link .tools-hover .tools-hover-content i {
+.tools-section .tools-item .tools-link .tools-hover .tools-hover-content i {
     margin-top: -12px;
 }
 
-#tools .tools-item .tools-link .tools-hover .tools-hover-content h3,
-#tools .tools-item .tools-link .tools-hover .tools-hover-content h4 {
+.tools-section .tools-item .tools-link .tools-hover .tools-hover-content h3,
+.tools-section .tools-item .tools-link .tools-hover .tools-hover-content h4 {
     margin: 0;
 }
 
-#tools .tools-item .tools-caption {
+.tools-section .tools-item .tools-caption {
     margin: 0 auto;
     padding: 25px;
     max-width: 400px;
@@ -551,12 +568,12 @@ section h3.section-subheading {
     text-transform: none !important;
 }
 
-#tools .tools-item .tools-caption h4 {
+.tools-section .tools-item .tools-caption h4 {
     margin: 0;
     text-transform: none;
 }
 
-#tools .tools-item .tools-caption p {
+.tools-section .tools-item .tools-caption p {
     margin: 0;
     font-family: {{ site.data.template.font.secondary }};
     font-size: 16px;
@@ -564,7 +581,32 @@ section h3.section-subheading {
     text-transform: none !important;
 }
 
-#tools * {
+.tools-section .tools-item .tools-links {
+    margin-top: 10px;
+}
+
+.tools-section .tools-item .tools-links a {
+    display: inline-block;
+    margin: 0 6px 6px 0;
+    padding: 4px 12px;
+    border: 1px solid #{{ site.data.template.color.primary }};
+    border-radius: 3px;
+    color: #{{ site.data.template.color.secondary-dark }};
+    font-family: {{ site.data.template.font.primary }};
+    font-size: 12px;
+}
+
+.tools-section .tools-item .tools-links a:hover,
+.tools-section .tools-item .tools-links a:focus {
+    background-color: #{{ site.data.template.color.primary }};
+    text-decoration: none;
+}
+
+.tools-section .tools-item .tools-links .fa {
+    margin-right: 4px;
+}
+
+.tools-section * {
     z-index: 2;
     text-transform: none !important;
     font-weight: normal !important;
