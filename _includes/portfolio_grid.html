@@ -7,7 +7,7 @@
                 <h3 class="section-subheading text-muted"><br></h3>
             </div>
         </div>
-        <div class="row">
+        <div class="row news-grid">
 <!-- Sort posts by date in reverse chronological order -->
 {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
 
@@ -20,6 +20,11 @@
 
           {% for post in posts %}
             <div class="col-md-4 col-sm-6 portfolio-item">
+              <div class="portfolio-date">
+                {% if post.pinned %}<i class="fa fa-thumb-tack"></i>{% endif %}
+                {% if post.layout == "publication" %}<i class="fa fa-book"></i>{% elsif post.layout == "news" %}<i class="fa fa-newspaper-o"></i>{% endif %}
+                {{ post.date | date_to_string }}
+              </div>
               {% if post.modal == true %}
                 <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
                   <div class="portfolio-hover">
@@ -40,19 +45,9 @@
                 </a>
               {% endif %}
                 <div class="portfolio-caption">
-                  <p class="text-muted">
-                    {% if post.pinned %}
-                      <i class="fa fa-thumb-tack"></i> <!-- Pinned Post Icon -->
-                    {% endif %}
                     {% if post.layout == "publication" %}
-                      <i class="fa fa-book"></i> <!-- Publication Post Icon -->
-                      {{ post.date | date_to_string }}
-                    </p>
                     <h5><i>"{{ post.title }}"</i>, in <strong style="font-weight: 700 !important;">{{ post.journal }}</strong></h5>
                     {% elsif post.layout == "news" %}
-                      <i class="fa fa-newspaper-o"></i> <!-- News Post Icon -->
-                      {{ post.date | date_to_string }}
-                    </p>
                     <h5>{{ post.title }}</h5>
                     <!-- <p>{{ post.description }}</p> -->
                     {% endif %}

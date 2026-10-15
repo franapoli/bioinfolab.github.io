@@ -367,6 +367,46 @@ section h3.section-subheading {
     margin: 0 0 15px;
 }
 
+/* Masonry-style news grid: js/news-grid.js sets each card's row span */
+#portfolio .news-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 30px;
+    margin: 0;
+}
+
+#portfolio .news-grid:before,
+#portfolio .news-grid:after {
+    display: none;
+}
+
+#portfolio .news-grid > .portfolio-item {
+    float: none;
+    width: auto;
+    padding: 0;
+    align-self: start;
+}
+
+#portfolio .news-grid.masonry-ready {
+    grid-auto-rows: 1px;
+}
+
+#portfolio .news-grid.masonry-ready > .portfolio-item {
+    margin: 0;
+}
+
+@media(min-width:768px) {
+    #portfolio .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width:992px) {
+    #portfolio .news-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 #portfolio .portfolio-item .portfolio-link {
     display: block;
     position: relative;
@@ -408,6 +448,23 @@ section h3.section-subheading {
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
     margin: 0;
+}
+
+#portfolio .portfolio-item .portfolio-date {
+    margin: 0 auto;
+    padding: 10px 25px;
+    max-width: 400px;
+    background-color: #{{ site.data.template.color.primary }};
+    color: #{{ site.data.template.color.secondary-dark }};
+    font-family: {{ site.data.template.font.primary }};
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#portfolio .portfolio-item .portfolio-date .fa {
+    margin-right: 6px;
 }
 
 #portfolio .portfolio-item .portfolio-caption {
