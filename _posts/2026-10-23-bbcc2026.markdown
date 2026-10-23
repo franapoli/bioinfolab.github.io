@@ -1,0 +1,16 @@
+---
+title: Our lab at BBCC2026 in Naples
+layout: news
+img: bbcc2026.jpg
+thumbnail: bbcc2026.jpg
+category: news
+modal: false
+link: https://www.bbcc-meetings.it/bbcc2026/
+description: >
+  Martina Palummo presented our work "Systematic prediction of drug
+  responsiveness across cancer cell lines based on machine learning from DNA
+  methylation profiles" at BBCC2026, the 21st Bioinformatics and
+  Computational Biology Conference, held at the Chiostro San Francesco in
+  Naples on 21-23 October 2026. Joint work with Luigi Cerulo, Stefano M.
+  Pagnotta and Francesco Napolitano.
+---
