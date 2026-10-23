@@ -4,5 +4,7 @@ layout: publication
 img: bbae207f2.jpg
 thumbnail: bbae207f2.jpg
 journal: Briefings in Bioinformatics
+authors: "Z. Li, A. Napolitano, M. Fedele, X. Gao, <strong>F. Napolitano</strong>"
+affiliations: "KAUST, Saudi Arabia · CNR-IEOS Naples · University of Sannio"
 link: https://academic.oup.com/bib/article/25/3/bbae207/7663424
 ---

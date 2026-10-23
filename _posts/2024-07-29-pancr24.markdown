@@ -4,5 +4,7 @@ layout: publication
 img: pancreatology2024.jpg
 thumbnail: pancreatology2024.jpg
 journal: Pancreatology
+authors: "G. Giordano, G. Cipolletta, A. Mellone, G. Puopolo, &hellip;, <strong>F. Napolitano</strong>, &hellip;, <strong>L. Cerulo</strong>, M.C. Costa, M. Pancione"
+affiliations: "University of Foggia · University of Sannio · University of Naples Federico II · Biogem"
 link: https://www.sciencedirect.com/science/article/pii/S1424390324006653
 ---

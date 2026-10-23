@@ -4,5 +4,7 @@ layout: publication
 img: jtm24.png
 thumbnail: jtm24.png
 journal: Journal of Translational Medicine
+authors: "M.C. Costa, C. Angelini, M. Franzese, C. Iside, M. Salvatore, L. Laezza, <strong>F. Napolitano</strong>, M. Ceccarelli"
+affiliations: "University of Naples Federico II · Biogem · CNR-IAC Naples · IRCCS SYNLAB SDN · University of Sannio · University of Miami"
 link: https://link.springer.com/article/10.1186/s12967-024-05006-z
 ---

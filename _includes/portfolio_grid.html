@@ -47,6 +47,8 @@
                 <div class="portfolio-caption">
                     {% if post.layout == "publication" %}
                     <h5><i>"{{ post.title }}"</i>, in <strong style="font-weight: 700 !important;">{{ post.journal }}</strong></h5>
+                    {% if post.authors %}<p class="pub-authors">{{ post.authors }}</p>{% endif %}
+                    {% if post.affiliations %}<p class="pub-affiliations">{{ post.affiliations }}</p>{% endif %}
                     {% elsif post.layout == "news" %}
                     <h5>{{ post.title }}</h5>
                     <!-- <p>{{ post.description }}</p> -->

@@ -4,5 +4,7 @@ layout: publication
 img: faretra2026.png
 thumbnail: faretra2026.png
 journal: Frontiers in Bioinformatics
+authors: "<strong>L. Faretra</strong>, <strong>F. Napolitano</strong>, M. Pancione, <strong>L. Cerulo</strong>"
+affiliations: "University of Sannio · Biogem"
 link: https://www.frontiersin.org/journals/bioinformatics/articles/10.3389/fbinf.2026.1801042/full
 ---

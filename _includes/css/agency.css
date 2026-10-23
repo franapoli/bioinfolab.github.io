@@ -494,6 +494,29 @@ section h3.section-subheading {
     font-weight: normal !important;
 }
 
+#portfolio .portfolio-item .portfolio-caption p.pub-authors {
+    margin-top: 10px;
+    font-family: {{ site.data.template.font.primary }};
+    font-size: 13px;
+    font-style: normal;
+    line-height: 1.45;
+    color: #444;
+}
+
+#portfolio .portfolio-item .portfolio-caption p.pub-authors strong {
+    font-weight: 700 !important;
+    color: #222;
+}
+
+#portfolio .portfolio-item .portfolio-caption p.pub-affiliations {
+    margin-top: 6px;
+    font-family: {{ site.data.template.font.primary }};
+    font-size: 12px;
+    font-style: normal;
+    line-height: 1.4;
+    color: #888;
+}
+
 /* Tools Grid */
 /* Tools grids: flex keeps each row aligned */
 .tools-section .tools-grid {
