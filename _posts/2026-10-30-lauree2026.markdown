@@ -1,0 +1,13 @@
+---
+title: Congratulations Maria Chiara, Roberto and Giorgia!
+layout: news
+img: lauree-ottobre2026.jpg
+thumbnail: lauree-ottobre2026.jpg
+category: news
+modal: false
+pinned: false
+description: >
+  Maria Chiara Armenise, Roberto Paduano and Giorgia Miano obtained their
+  Bachelor's Degree after completing their thesis work in our lab.
+  Congratulations to all three!
+---

@@ -4,7 +4,7 @@ order: 363
 pic: armenise
 position: Bachelor's thesis student
 level: 4
-group: current
+group: former
 ---
 
-Maria Chiara recently joined the lab as a Bachelor's thesis student.
+Maria Chiara got her Bachelor Degree after completing her thesis work in our lab.
