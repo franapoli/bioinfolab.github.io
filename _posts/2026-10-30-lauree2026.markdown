@@ -8,6 +8,9 @@ modal: false
 pinned: false
 description: >
   Maria Chiara Armenise, Roberto Paduano and Giorgia Miano obtained their
-  Bachelor's Degree after completing their thesis work in our lab.
+  Bachelor's Degree in Biotechnology with theses carried out in our lab, on
+  computational thinking in biotechnology and STEM education, on the
+  specialization of Large Language Models for bioinformatics with LoRA, and
+  on generative AI and multimodal foundation models in oncology.
   Congratulations to all three!
 ---

@@ -7,4 +7,4 @@ level: 4
 group: former
 ---
 
-Giorgia got her Bachelor Degree after completing her thesis work in our lab.
+Giorgia obtained her Bachelor's Degree in Biotechnology with a thesis titled "L'intelligenza artificiale generativa in oncologia: il ruolo dei Large Language Models e dei Foundation Models multimodali". Her work reviews how foundation models and large language models can integrate heterogeneous clinical, genomic and imaging data to support precision oncology, along with their current limitations.
