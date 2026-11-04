@@ -146,6 +146,60 @@ layout: style
   flex-shrink: 0;
 }
 
+/* Gazzetta Bioinformatica: last navbar entry, set apart by colour, icon and
+   a thin separator. It opens the external archive in a new tab. */
+.navbar-default .nav li a.gazzetta-nav {
+  color: #fed136;
+}
+
+.navbar-default .nav li a.gazzetta-nav:hover,
+.navbar-default .nav li a.gazzetta-nav:focus {
+  color: #fff;
+}
+
+.gazzetta-nav .fa {
+  margin-right: 3px;
+}
+
+@media (min-width: 768px) {
+  .navbar-default .nav li.gazzetta-nav-item {
+    position: relative;
+    margin-left: 4px;
+    padding-left: 4px;
+  }
+  .navbar-default .nav li.gazzetta-nav-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 14px;
+    bottom: 14px;
+    border-left: 1px solid rgba(255, 255, 255, .3);
+  }
+  .navbar-default .nav li a.gazzetta-nav {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .35); /* legible over the header photo */
+  }
+  .navbar-default.navbar-shrink .nav li a.gazzetta-nav {
+    text-shadow: none;
+  }
+}
+
+/* Slightly tighter menu so the extra entry still fits on one line once the
+   navbar shrinks on scroll. */
+@media (min-width: 992px) {
+  .navbar-default .nav li a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-default .nav li a {
+    padding-left: 9px;
+    padding-right: 9px;
+    letter-spacing: .6px;
+  }
+}
+
 <style>
 .modal-body p {
     text-align: left;

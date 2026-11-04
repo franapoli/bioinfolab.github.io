@@ -42,6 +42,13 @@
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
+                    {% if site.gazzetta_url %}
+                    <li class="gazzetta-nav-item">
+                        <a class="gazzetta-nav" href="{{ site.gazzetta_url }}" target="_blank" rel="noopener" title="Gazzetta Bioinformatica: the lab's weekly literature digest (in Italian)">
+                            <i class="fa fa-newspaper-o" aria-hidden="true"></i> Gazzetta
+                        </a>
+                    </li>
+                    {% endif %}
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

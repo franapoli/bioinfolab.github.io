@@ -6,6 +6,10 @@ title: Bioinformatics Lab @ UniSannio
 email: frnapolitano@unisannio.it
 description: "Laboratory of Bioinformatics at University of Sannio"
 
+# Gazzetta Bioinformatica: weekly literature digest, published by a scheduled
+# Claude task to a public archive page. Remove or empty to hide the link.
+gazzetta_url: "https://claude.ai/artifact/MhVqmaFY6ftCs8CdobmATj"
+
 #plugins:
 #  - jekyll-admin
 
