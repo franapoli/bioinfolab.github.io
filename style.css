@@ -183,20 +183,19 @@ layout: style
   }
 }
 
-/* Slightly tighter menu so the extra entry still fits on one line once the
-   navbar shrinks on scroll. */
+/* From 992px up the menu uses slightly smaller type and spacing, and the lab
+   name shrinks a bit more on scroll, so that once the bar shrinks logo and
+   menu (Gazzetta and language switch included) sit on one line in both
+   languages from 1200px. */
 @media (min-width: 992px) {
   .navbar-default .nav li a {
-    padding-left: 10px;
-    padding-right: 10px;
+    font-size: 13px;
+    letter-spacing: .4px;
+    padding-left: 6px;
+    padding-right: 6px;
   }
-}
-
-@media (min-width: 1200px) {
-  .navbar-default .nav li a {
-    padding-left: 9px;
-    padding-right: 9px;
-    letter-spacing: .6px;
+  .navbar-default.navbar-shrink .navbar-brand {
+    font-size: 1.3em;
   }
 }
 
@@ -230,16 +229,14 @@ layout: style
   transition: opacity .2s ease;
 }
 
-/* Below 1200px only the flags are shown, so the menu (and, on phones, the
-   lab name next to the switch) still fits on one line. The codes stay
-   readable by screen readers through the flags' alt text. */
-@media (max-width: 1199px) {
-  .lang-code {
-    display: none;
-  }
-  .lang-flag {
-    margin-right: 0;
-  }
+/* Only the flags are shown, so the menu (and, on phones, the lab name next
+   to the switch) fits on one line. The codes stay readable by screen
+   readers through the flags' alt text. */
+.lang-code {
+  display: none;
+}
+.lang-flag {
+  margin-right: 0;
 }
 
 /* the flag of the current language, and the one under the pointer, at full strength */
@@ -293,16 +290,6 @@ layout: style
   html[lang="it"] header .intro-text .intro-heading {
     font-size: 30px;
     line-height: 36px;
-  }
-}
-
-/* The Italian menu labels are longer: tighten the menu a bit more so it
-   still fits on one line on mid-size screens. */
-@media (min-width: 992px) and (max-width: 1199px) {
-  html[lang="it"] .navbar-default .nav li a {
-    padding-left: 6px;
-    padding-right: 6px;
-    letter-spacing: .4px;
   }
 }
 
