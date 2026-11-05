@@ -7,4 +7,15 @@ journal: Journal of Translational Medicine
 authors: "M.C. Costa, C. Angelini, M. Franzese, C. Iside, M. Salvatore, L. Laezza, <strong>F. Napolitano</strong>, M. Ceccarelli"
 affiliations: "University of Naples Federico II · Biogem · CNR-IAC Naples · IRCCS SYNLAB SDN · University of Sannio · University of Miami"
 link: https://link.springer.com/article/10.1186/s12967-024-05006-z
+headline: "New drug candidates and a risk score for osteoarthritis"
+description: >
+  Osteoarthritis affects a large share of middle-aged people, and current
+  treatments are still poorly effective. Combining three patient cohorts, this
+  study derived a consensus signature of 44 genes involved in the disease.
+  Network-based drug prioritization pointed to candidates such as resveratrol,
+  tenoxicam and mesalazine, and seven gene targets were confirmed in vitro.
+  The authors also propose a risk score based on just eight genes that
+  predicts the clinical stage of the disease from RNA-Seq data. A
+  collaboration with Federico II University of Naples, Biogem, CNR, IRCCS
+  SYNLAB SDN and the University of Miami.
 ---

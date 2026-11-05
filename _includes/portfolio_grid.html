@@ -45,17 +45,25 @@
                 </a>
               {% endif %}
                 <div class="portfolio-caption">
-                    {% if post.layout == "publication" %}
+                    {% if post.layout == "publication" and post.headline %}
+                    <span class="news-kicker">New publication</span>
+                    <h5 class="news-headline">{{ post.headline }}</h5>
+                    {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+                    <div class="pub-ref">
+                        <p class="pub-title">&ldquo;{{ post.title }}&rdquo;</p>
+                        <p class="pub-journal">{{ post.journal }}</p>
+                        {% if post.authors %}<p class="pub-authors">{{ post.authors }}</p>{% endif %}
+                        {% if post.affiliations %}<p class="pub-affiliations">{{ post.affiliations }}</p>{% endif %}
+                        {% if post.link %}<a class="pub-ref-link" href="{{ post.link }}" target="_blank" rel="noopener">Read the paper <i class="fa fa-external-link"></i></a>{% endif %}
+                    </div>
+                    {% elsif post.layout == "publication" %}
                     <h5><i>"{{ post.title }}"</i>, in <strong style="font-weight: 700 !important;">{{ post.journal }}</strong></h5>
                     {% if post.authors %}<p class="pub-authors">{{ post.authors }}</p>{% endif %}
                     {% if post.affiliations %}<p class="pub-affiliations">{{ post.affiliations }}</p>{% endif %}
-                    {% elsif post.layout == "news" %}
-                    <h5>{{ post.title }}</h5>
-                    <!-- <p>{{ post.description }}</p> -->
+                    {% else %}
+                    <h5 class="news-headline">{{ post.title }}</h5>
+                    {% unless post.modal %}<p>{{ post.description }}</p>{% endunless %}
                     {% endif %}
-                    {% unless post.modal %}
-                      <p>{{ post.description }}</p>
-                    {% endunless %}
                 </div>
             </div>
           {% endfor %}

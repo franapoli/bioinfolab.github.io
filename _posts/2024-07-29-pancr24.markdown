@@ -7,4 +7,15 @@ journal: Pancreatology
 authors: "G. Giordano, G. Cipolletta, A. Mellone, G. Puopolo, &hellip;, <strong>F. Napolitano</strong>, &hellip;, <strong>L. Cerulo</strong>, M.C. Costa, M. Pancione"
 affiliations: "University of Foggia · University of Sannio · University of Naples Federico II · Biogem"
 link: https://www.sciencedirect.com/science/article/pii/S1424390324006653
+headline: "Centrosome genes linked to pancreatic cancer outcome"
+description: >
+  Pancreatic ductal adenocarcinoma is among the leading causes of cancer
+  death, and its cells often show abnormal centrosomes. Mining public
+  RNA-sequencing data, this study identified two centrosome genes, CEP250
+  and CEP170, whose high expression is associated with a worse prognosis, and
+  confirmed the findings on patient tissues. In a small validation cohort,
+  patients with high CEP250 levels had shorter survival and rarely responded
+  to first-line chemotherapy, while low levels were associated with long-term
+  survivors. A collaboration with the University of Foggia, Federico II
+  University of Naples and Biogem.
 ---

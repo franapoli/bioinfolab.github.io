@@ -7,4 +7,16 @@ affiliations: "IIT Naples · TIGEM · University of Naples Federico II · CNR-IA
 img: pisani2025.png
 thumbnail: pisani2025.png
 link: https://link.springer.com/article/10.1038/s41467-025-62529-9
+headline: "Drugs that boost engineered cells, found computationally"
+description: >
+  Mammalian cells engineered with synthetic genetic circuits are at the heart
+  of next-generation biotherapeutics, but their productivity is limited by
+  finite cellular resources. Using DECCODE, a computational drug-matching
+  method developed by Prof. Napolitano, the authors compared the
+  transcriptional profile of cells carrying a performance-enhancing circuit
+  with thousands of drug-induced profiles, looking for drugs that mimic its
+  effect without further genetic changes. The top candidate, Filgotinib,
+  increased the expression of genetic payloads across several cell lines and
+  delivery systems, including AAV and lentivirus. A collaboration led by Velia
+  Siciliano's lab at IIT Naples, with TIGEM, Federico II and CNR.
 ---

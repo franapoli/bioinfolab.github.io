@@ -7,4 +7,15 @@ journal: Briefings in Bioinformatics
 authors: "Z. Li, A. Napolitano, M. Fedele, X. Gao, <strong>F. Napolitano</strong>"
 affiliations: "KAUST, Saudi Arabia · CNR-IEOS Naples · University of Sannio"
 link: https://academic.oup.com/bib/article/25/3/bbae207/7663424
+headline: "AI finds drugs that push breast cancer stem cells to differentiate"
+description: >
+  Cancer stem cells are a small, stem-like population within tumours, and
+  inducing them to differentiate is a promising route to long-term remission.
+  Here, a deep neural network trained on single-cell data from human
+  pluripotent stem cells was used to screen thousands of drug-induced
+  expression profiles from the LINCS database, with adversarial learning
+  removing the bias between the two kinds of data. Five of the six top-ranked
+  molecules tested in breast cancer cell lines proved effective, among them
+  triptolide, OTS-167 and quinacrine. A collaboration with KAUST (Saudi
+  Arabia) and CNR-IEOS Naples.
 ---

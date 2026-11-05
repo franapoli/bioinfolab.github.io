@@ -7,4 +7,15 @@ journal: Frontiers in Bioinformatics
 authors: "<strong>L. Faretra</strong>, <strong>F. Napolitano</strong>, M. Pancione, <strong>L. Cerulo</strong>"
 affiliations: "University of Sannio · Biogem"
 link: https://www.frontiersin.org/journals/bioinformatics/articles/10.3389/fbinf.2026.1801042/full
+headline: "What makes an intron stay? Reading intron retention from DNA sequence"
+description: >
+  Most introns are cut out of gene transcripts by splicing, but some are
+  selectively retained, a form of alternative splicing that shapes gene
+  regulation. In this study led by our PhD student Luca Faretra, we extracted
+  exon-intron-exon units across the human genome and described each one with a
+  broad set of sequence features, from splice-site strength and GC content to
+  transposable elements and RNA-binding protein signatures. Machine learning
+  models show that the tendency to be retained arises from the interplay of
+  many factors, with intron length and GC content as the strongest predictors.
+  Fully developed in our lab, in collaboration with Biogem.
 ---

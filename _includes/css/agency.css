@@ -517,6 +517,78 @@ section h3.section-subheading {
     color: #888;
 }
 
+/* Publication cards written as news: headline + news text first, then the
+   bibliographic reference in a quieter box underneath. */
+#portfolio .portfolio-item .portfolio-caption .news-kicker {
+    display: block;
+    margin-bottom: 6px;
+    font-family: {{ site.data.template.font.primary }};
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    color: #999;
+}
+
+#portfolio .portfolio-item .portfolio-caption h5.news-headline {
+    margin: 0 0 12px;
+    font-size: 17px;
+    line-height: 1.35;
+    font-weight: 700 !important;
+    color: #222;
+}
+
+#portfolio .portfolio-item .portfolio-caption .pub-ref {
+    margin-top: 18px;
+    padding: 12px 14px;
+    background: #f7f7f7;
+    border-left: 3px solid #{{ site.data.template.color.primary }};
+    border-radius: 2px;
+}
+
+#portfolio .portfolio-item .portfolio-caption .pub-ref p.pub-title {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #444;
+}
+
+#portfolio .portfolio-item .portfolio-caption .pub-ref p.pub-journal {
+    margin-top: 4px;
+    font-family: {{ site.data.template.font.primary }};
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700 !important;
+    color: #222;
+}
+
+#portfolio .portfolio-item .portfolio-caption .pub-ref p.pub-authors {
+    margin-top: 6px;
+    font-size: 12px;
+}
+
+#portfolio .portfolio-item .portfolio-caption .pub-ref p.pub-affiliations {
+    font-size: 11px;
+}
+
+#portfolio .portfolio-item .portfolio-caption .pub-ref-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-family: {{ site.data.template.font.primary }};
+    font-size: 13px;
+    font-weight: 700 !important;
+    color: #222;
+    border-bottom: 2px solid #{{ site.data.template.color.primary }};
+}
+
+#portfolio .portfolio-item .portfolio-caption .pub-ref-link:hover,
+#portfolio .portfolio-item .portfolio-caption .pub-ref-link:focus {
+    color: #{{ site.data.template.color.primary }};
+    text-decoration: none;
+}
+
+#portfolio .portfolio-item .portfolio-caption .pub-ref-link .fa {
+    margin-left: 3px;
+    font-size: 11px;
+}
+
 /* Tools Grid */
 /* Tools grids: flex keeps each row aligned */
 .tools-section .tools-grid {
