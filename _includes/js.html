@@ -20,6 +20,8 @@
     <!-- Language switch: keep the current section (#anchor) when changing language -->
     <script>
     $('.lang-switch-link').on('click', function () {
+        // remember the choice, so the browser language no longer decides
+        try { localStorage.setItem('bioinfolab-lang', this.getAttribute('hreflang')); } catch (e) {}
         var section = $('.navbar-nav li.active > a.page-scroll').attr('href');
         if (section && section.charAt(0) === '#') {
             this.href = this.href.split('#')[0] + section;

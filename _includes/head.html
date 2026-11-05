@@ -1,5 +1,20 @@
 <head>
     <meta charset="utf-8">
+    {% if lang == "en" %}
+    <!-- Open the Italian version for visitors whose browser is set to Italian,
+         unless they already picked a language with the EN | IT switch. -->
+    <script>
+    (function () {
+        var pref = null;
+        try { pref = localStorage.getItem('bioinfolab-lang'); } catch (e) {}
+        if (pref === 'en') return;
+        var browserLang = (navigator.languages && navigator.languages[0]) || navigator.language || '';
+        if (pref === 'it' || (!pref && /^it\b/i.test(browserLang))) {
+            location.replace('{{ site.baseurl }}/it/' + location.hash);
+        }
+    })();
+    </script>
+    {% endif %}
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ t.site_title | default: site.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
