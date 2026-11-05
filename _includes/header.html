@@ -1,11 +1,13 @@
 <!-- Navigation -->
 {% capture url_en %}{{ site.baseurl }}/{% endcapture %}
 {% capture url_it %}{{ site.baseurl }}/it/{% endcapture %}
+{% capture flag_en %}<img class="lang-flag" src="{{ site.baseurl }}/img/flags/en.svg" alt="English" width="18" height="12">{% endcapture %}
+{% capture flag_it %}<img class="lang-flag" src="{{ site.baseurl }}/img/flags/it.svg" alt="Italiano" width="18" height="12">{% endcapture %}
 {% capture lang_switch %}
 <span class="lang-switch" role="group" aria-label="Language / Lingua">
-    {% if lang == "it" %}<a href="{{ url_en }}" class="lang-switch-link" hreflang="en" lang="en" title="Read the site in English">EN</a>{% else %}<span class="lang-switch-current" aria-current="true">EN</span>{% endif %}
+    {% if lang == "it" %}<a href="{{ url_en }}" class="lang-switch-link" hreflang="en" lang="en" title="Read the site in English">{{ flag_en }}<span class="lang-code">EN</span></a>{% else %}<span class="lang-switch-current" aria-current="true">{{ flag_en }}<span class="lang-code">EN</span></span>{% endif %}
     <span class="lang-switch-sep" aria-hidden="true">|</span>
-    {% if lang == "it" %}<span class="lang-switch-current" aria-current="true">IT</span>{% else %}<a href="{{ url_it }}" class="lang-switch-link" hreflang="it" lang="it" title="Leggi il sito in italiano">IT</a>{% endif %}
+    {% if lang == "it" %}<span class="lang-switch-current" aria-current="true">{{ flag_it }}<span class="lang-code">IT</span></span>{% else %}<a href="{{ url_it }}" class="lang-switch-link" hreflang="it" lang="it" title="Leggi il sito in italiano">{{ flag_it }}<span class="lang-code">IT</span></a>{% endif %}
 </span>
 {% endcapture %}
     <nav class="navbar navbar-default navbar-fixed-top">

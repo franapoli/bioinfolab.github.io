@@ -218,6 +218,42 @@ layout: style
   font-weight: 700;
 }
 
+.lang-flag {
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 5px;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, .35);
+  vertical-align: -1px;
+  opacity: .65;
+  transition: opacity .2s ease;
+}
+
+/* Below 1200px only the flags are shown, so the menu (and, on phones, the
+   lab name next to the switch) still fits on one line. The codes stay
+   readable by screen readers through the flags' alt text. */
+@media (max-width: 1199px) {
+  .lang-code {
+    display: none;
+  }
+  .lang-flag {
+    margin-right: 0;
+  }
+}
+
+/* the flag of the current language, and the one under the pointer, at full strength */
+.lang-switch-current .lang-flag,
+.lang-switch-link:hover .lang-flag,
+.lang-switch-link:focus .lang-flag {
+  opacity: 1;
+}
+
+/* yellow ring marks the current language, also when only flags are shown */
+.lang-switch-current .lang-flag {
+  box-shadow: 0 0 0 2px #fed136;
+}
+
 .lang-switch-sep {
   color: rgba(255, 255, 255, .4);
   margin: 0 5px;
