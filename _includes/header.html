@@ -1,14 +1,25 @@
 <!-- Navigation -->
+{% capture url_en %}{{ site.baseurl }}/{% endcapture %}
+{% capture url_it %}{{ site.baseurl }}/it/{% endcapture %}
+{% capture lang_switch %}
+<span class="lang-switch" role="group" aria-label="Language / Lingua">
+    {% if lang == "it" %}<a href="{{ url_en }}" class="lang-switch-link" hreflang="en" lang="en" title="Read the site in English">EN</a>{% else %}<span class="lang-switch-current" aria-current="true">EN</span>{% endif %}
+    <span class="lang-switch-sep" aria-hidden="true">|</span>
+    {% if lang == "it" %}<span class="lang-switch-current" aria-current="true">IT</span>{% else %}<a href="{{ url_it }}" class="lang-switch-link" hreflang="it" lang="it" title="Leggi il sito in italiano">IT</a>{% endif %}
+</span>
+{% endcapture %}
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
+                    <span class="sr-only">{{ t.nav.toggle }}</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                <!-- Language switch, always visible on phones (outside the collapsed menu) -->
+                <div class="lang-switch-mobile visible-xs-block">{{ lang_switch }}</div>
                 <a class="navbar-brand page-scroll" href="#page-top">{{site.title}}</a>
             </div>
 
@@ -19,36 +30,37 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">About</a>
+                        <a class="page-scroll" href="#services">{{ t.nav.about }}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">News</a>
+                        <a class="page-scroll" href="#portfolio">{{ t.nav.news }}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#tools">Tools</a>
+                        <a class="page-scroll" href="#tools">{{ t.nav.tools }}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#edutools">Edu Tools</a>
+                        <a class="page-scroll" href="#edutools">{{ t.nav.edutools }}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#facilities">Facilities</a>
+                        <a class="page-scroll" href="#facilities">{{ t.nav.facilities }}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#team">People</a>
+                        <a class="page-scroll" href="#team">{{ t.nav.people }}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#theses">Theses</a>
+                        <a class="page-scroll" href="#theses">{{ t.nav.theses }}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#contact">{{ t.nav.contact }}</a>
                     </li>
                     {% if site.gazzetta_url %}
                     <li class="gazzetta-nav-item">
-                        <a class="gazzetta-nav" href="{{ site.gazzetta_url }}" target="_blank" rel="noopener" title="Gazzetta Bioinformatica: the lab's weekly literature digest (in Italian)">
+                        <a class="gazzetta-nav" href="{{ site.gazzetta_url }}" target="_blank" rel="noopener" title="{{ t.nav.gazzetta_title }}">
                             <i class="fa fa-newspaper-o" aria-hidden="true"></i> Gazzetta
                         </a>
                     </li>
                     {% endif %}
+                    <li class="lang-switch-item hidden-xs">{{ lang_switch }}</li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -60,9 +72,9 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">DST UniSannio</div>
-                <div class="intro-heading">Bioinformatics Lab</div>
-                <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+                <div class="intro-lead-in">{{ t.header.lead }}</div>
+                <div class="intro-heading">{{ t.header.heading }}</div>
+                <a href="#services" class="page-scroll btn btn-xl">{{ t.header.button }}</a>
             </div>
         </div>
     </header>
@@ -71,4 +83,3 @@
           {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
         {% endfor %}
  -->
-

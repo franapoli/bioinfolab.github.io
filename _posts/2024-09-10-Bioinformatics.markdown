@@ -17,4 +17,17 @@ description: >
   patients that matter clinically, offering a new AI-based way to prioritize
   treatments for high-risk patients. Joint work with the University of Eastern
   Finland; the code is freely available on GitHub.
+# Italian version (shown on /it/; English is used where a field is missing)
+headline_it: "MODAE: deep learning per collegare linee cellulari e pazienti"
+description_it: >
+  Gli screening farmacologici su linee cellulari tumorali sono alla base di
+  gran parte dello sviluppo di nuovi farmaci, ma le linee cellulari
+  differiscono dai tumori reali dei pazienti. L'articolo presenta MODAE, un
+  modello di deep learning che integra profili omici di linee cellulari e di
+  pazienti e impara a predire contemporaneamente la sensibilità ai farmaci e
+  la sopravvivenza. Tenere conto della sopravvivenza aiuta a preservare le
+  differenze tra pazienti clinicamente rilevanti, offrendo un nuovo modo,
+  basato sull'IA, per prioritizzare i trattamenti per i pazienti ad alto
+  rischio. Lavoro congiunto con la University of Eastern Finland; il codice
+  è liberamente disponibile su GitHub.
 ---

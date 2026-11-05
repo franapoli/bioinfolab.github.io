@@ -8,4 +8,7 @@ modal: false
 link: https://docs.google.com/forms/d/e/1FAIpQLSeAXqrIoVeHnc_L6SkqkVpIGVbP1KkqRklBg0HW6qohkcWLFg/viewform
 pinned: false
 description: A specialization in Bioinformatics is just starting within the framework of the new Master Degree in Health Biotechnologies, starting in Academic Year 2025/26!
+# Italian version (shown on /it/; English is used where a field is missing)
+title_it: Nuova Laurea Magistrale in Biotecnologie per la Salute / Bioinformatica
+description_it: Nell'ambito della nuova Laurea Magistrale in Biotecnologie per la Salute, a partire dall'Anno Accademico 2025/26, prende il via un curriculum in Bioinformatica!
 ---

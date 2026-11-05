@@ -6,4 +6,7 @@ thumbnail: ../team/mnigro.jpg
 category: news
 modal: false
 description: Marco Nigro just joined our team as a postdoctoral researcher! More about him in the Team section below.
+# Italian version (shown on /it/; English is used where a field is missing)
+title_it: Benvenuto Marco!
+description_it: Marco Nigro è appena entrato nel nostro gruppo come ricercatore postdoc! Trovi più informazioni su di lui nella sezione Persone qui sotto.
 ---

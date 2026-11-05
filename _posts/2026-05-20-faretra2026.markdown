@@ -18,4 +18,19 @@ description: >
   models show that the tendency to be retained arises from the interplay of
   many factors, with intron length and GC content as the strongest predictors.
   Fully developed in our lab, in collaboration with Biogem.
+# Italian version (shown on /it/; English is used where a field is missing)
+headline_it: "Perché un introne resta? Leggere la ritenzione intronica nella sequenza del DNA"
+description_it: >
+  La maggior parte degli introni viene rimossa dai trascritti attraverso lo
+  splicing, ma alcuni vengono trattenuti selettivamente: una forma di
+  splicing alternativo che contribuisce alla regolazione genica. In questo
+  studio guidato dal nostro dottorando Luca Faretra abbiamo estratto le unità
+  esone-introne-esone dell'intero genoma umano, descrivendo ciascuna con un
+  ampio insieme di caratteristiche di sequenza, dalla forza dei siti di
+  splicing e il contenuto in GC fino agli elementi trasponibili e alle firme
+  delle proteine che legano l'RNA. I modelli di machine learning mostrano che
+  la tendenza a essere trattenuto nasce dall'interazione di molti fattori,
+  con la lunghezza dell'introne e il contenuto in GC come predittori più
+  forti. Interamente sviluppato nel nostro laboratorio, in collaborazione con
+  Biogem.
 ---

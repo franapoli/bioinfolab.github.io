@@ -200,6 +200,89 @@ layout: style
   }
 }
 
+/* Language switch (EN | IT). The current language is shown in yellow, the
+   other one is a link to the translated page. On phones it sits next to the
+   menu button, so it is reachable without opening the menu. */
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.lang-switch-current {
+  color: #fed136;
+  font-weight: 700;
+}
+
+.lang-switch-sep {
+  color: rgba(255, 255, 255, .4);
+  margin: 0 5px;
+}
+
+.navbar-default .nav li .lang-switch a.lang-switch-link,
+.lang-switch-mobile a.lang-switch-link {
+  display: inline;
+  padding: 0;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar-default .nav li .lang-switch a.lang-switch-link:hover,
+.navbar-default .nav li .lang-switch a.lang-switch-link:focus,
+.lang-switch-mobile a.lang-switch-link:hover,
+.lang-switch-mobile a.lang-switch-link:focus {
+  color: #fed136;
+  text-decoration: none;
+}
+
+.lang-switch-mobile {
+  float: right;
+  margin: 15px 12px 0 0;
+}
+
+@media (max-width: 767px) {
+  .lang-switch-mobile {
+    margin-top: 20px;
+  }
+  /* leave room for the switch next to the brand on phones */
+  .navbar-default .navbar-brand {
+    font-size: 17px;
+    padding-right: 5px;
+  }
+  /* the Italian title has a longer word than the English one */
+  html[lang="it"] header .intro-text .intro-heading {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+/* The Italian menu labels are longer: tighten the menu a bit more so it
+   still fits on one line on mid-size screens. */
+@media (min-width: 992px) and (max-width: 1199px) {
+  html[lang="it"] .navbar-default .nav li a {
+    padding-left: 6px;
+    padding-right: 6px;
+    letter-spacing: .4px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-default .nav li.lang-switch-item {
+    padding: 18px 0 20px 8px;
+    margin-left: 4px;
+  }
+  .navbar-default .nav li.lang-switch-item .lang-switch {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .35); /* legible over the header photo */
+  }
+  .navbar-default.navbar-shrink .nav li.lang-switch-item .lang-switch {
+    text-shadow: none;
+  }
+}
+
 <style>
 .modal-body p {
     text-align: left;

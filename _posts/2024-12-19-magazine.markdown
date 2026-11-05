@@ -8,4 +8,7 @@ modal: false
 link: https://unisannio.it/sites/default/files/sito/cover-page/allegati/it/magazine_dicembre_2024.pdf
 pinned: false
 description: What is Bioinformatics and what do we do at UniSannio BioInfolab? We were asked these questions by UniSannio Magazine and were glad to answer!
+# Italian version (shown on /it/; English is used where a field is missing)
+title_it: Il BioinfoLab su UniSannio Magazine
+description_it: Cos'è la bioinformatica e di cosa ci occupiamo al BioinfoLab di UniSannio? Ce lo ha chiesto UniSannio Magazine e siamo stati felici di rispondere!
 ---

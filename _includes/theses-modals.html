@@ -15,13 +15,13 @@
                             <h2>{{ thesis.title }}</h2>
                             <hr class="star-primary">
                             <ul class="list-inline item-details">
-                                <li><strong>Author</strong>: {{ thesis.author }}</li>
-                                <li><strong>Degree</strong>: {{ thesis.degree }}</li>
-                                <li><strong>Academic year</strong>: {{ thesis.academic_year }}</li>
+                                <li><strong>{{ t.theses.author }}</strong>: {{ thesis.author }}</li>
+                                <li><strong>{{ t.theses.degree }}</strong>: {{ thesis.degree }}</li>
+                                <li><strong>{{ t.theses.academic_year }}</strong>: {{ thesis.academic_year }}</li>
                             </ul>
                             <p style="text-align: left !important;">{{ thesis.content }}</p>
-                            <a href="{{ site.baseurl }}/tesi/{{ thesis.file }}" class="btn btn-primary" download><i class="fa fa-download"></i> Download</a>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <a href="{{ site.baseurl }}/tesi/{{ thesis.file }}" class="btn btn-primary" download><i class="fa fa-download"></i> {{ t.theses.download }}</a>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> {{ t.modal.close }}</button>
                         </div>
                     </div>
                 </div>

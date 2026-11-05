@@ -10,4 +10,10 @@ description: >
   Prof. Napolitano, co-director of the Bioinformatics Lab, has been appointed
   Chair of the Bachelor’s and Master’s Programs in Biotechnology. His term will
   last three years starting today. Good luck!
+# Italian version (shown on /it/; English is used where a field is missing)
+title_it: Il Prof. Napolitano presidente dei Corsi di Studio in Biotecnologie
+description_it: >
+  Il Prof. Napolitano, co-direttore del Laboratorio di Bioinformatica, è
+  stato nominato Presidente dei Corsi di Laurea Triennale e Magistrale in
+  Biotecnologie. Il mandato durerà tre anni a partire da oggi. Buon lavoro!
 ---

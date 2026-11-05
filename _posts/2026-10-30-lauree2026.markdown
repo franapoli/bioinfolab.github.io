@@ -13,4 +13,13 @@ description: >
   specialization of Large Language Models for bioinformatics with LoRA, and
   on generative AI and multimodal foundation models in oncology.
   Congratulations to all three!
+# Italian version (shown on /it/; English is used where a field is missing)
+title_it: Congratulazioni Maria Chiara, Roberto e Giorgia!
+description_it: >
+  Maria Chiara Armenise, Roberto Paduano e Giorgia Miano hanno conseguito la
+  Laurea in Biotecnologie con tesi svolte nel nostro laboratorio, sul
+  pensiero computazionale nelle biotecnologie e nella didattica STEM, sulla
+  specializzazione dei Large Language Models per la bioinformatica con LoRA
+  e sull'IA generativa e i foundation model multimodali in oncologia.
+  Congratulazioni a tutti e tre!
 ---

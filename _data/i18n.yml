@@ -1,0 +1,198 @@
+# Interface strings for the English and Italian versions of the site.
+# Content (news, people, tools) is translated in each file's front matter
+# with *_it fields (title_it, description_it, ...); when a translation is
+# missing the English text is shown.
+
+en:
+  html_lang: en
+  site_title: "Bioinformatics Lab @ UniSannio"
+  description: "Laboratory of Bioinformatics at University of Sannio"
+  lang_switch_title: "Leggi il sito in italiano"
+  nav:
+    toggle: "Toggle navigation"
+    about: About
+    news: News
+    tools: Tools
+    edutools: Edu Tools
+    facilities: Facilities
+    people: People
+    theses: Theses
+    contact: Contact
+    gazzetta_title: "Gazzetta Bioinformatica: the lab's weekly literature digest (in Italian)"
+  header:
+    lead: DST UniSannio
+    heading: Bioinformatics Lab
+    button: Tell Me More
+  about:
+    heading: About
+    intro: >-
+      The Bioinformatics Lab at University of Sannio is led by Luigi Cerulo and
+      Francesco Napolitano, focusing on Systems Biology, AI-driven omics data
+      analysis, and Computational Drug Discovery.
+    areas:
+      - img: sysbio.png
+        title: Systems Biology
+        text: Exploring biological data to uncover complex molecular mechanisms
+      - img: ai.png
+        title: AI-driven omics data analysis
+        text: Leveraging Artificial Intelligence to make biological predictions from omics data.
+      - img: compdd.png
+        title: Computational Drug Discovery
+        text: Indentifying small molecules for clinical and laboratory applications.
+    history: >-
+      Bioinformatics research activities at the University of Sannio were
+      initiated in 2000 by Michele Ceccarelli and focused on the study of
+      informatic processes in biological systems. As biological data began to
+      grow exponentially, the lab focused toward data science approaches in
+      bioinformatics under the co-direction of Luigi Cerulo from 2009. Starting
+      in 2021, the Bioinformatics Lab has been led by Luigi Cerulo and Francesco
+      Napolitano and employs advanced techniques to explore biological data,
+      predict molecular mechanisms, and identify novel drugs and therapeutic
+      targets, driving innovation in bioinformatics research.
+  news:
+    heading: News and Publications
+    new_publication: New publication
+    read_paper: Read the paper
+    in: in
+  tools:
+    heading: Tools
+    edu_heading: Educational Tools
+    website: Website
+    paper: Paper
+  facilities:
+    heading: Facilities
+    items:
+      - img: 3.jpg
+        title: Informatics lab
+        text: 50 desktop computers equipped with LTS Ubuntu and major bioinformatics tools for laboratory activities.
+      - img: 1.jpg
+        title: Superdome Flex
+        text: 224 CPU cores Intel(R) Xeon(R) Platinum 8280 CPU @ 2.70GHz, 1.5 TB RAM, 150TB storage, 1 GPU NVIDIA Tesla V100.
+      - img: 2.jpg
+        title: Server cluster
+        text: Cluster of 7 CPU servers and 1 GPU unit including a total of 400 CPU cores, 4 TB RAM, 600TB storage, 6 GPU NVIDIA. Hosted at Biogem - Molecular Biology and Genetics Research Institute in Ariano Irpino (AV).
+  people:
+    heading: People
+    current: Current members
+    former: Former members
+    position: Position
+  theses:
+    heading: Theses
+    author: Author
+    degree: Degree
+    academic_year: Academic year
+    download: Download
+  collaborations:
+    heading: Ongoing collaborations
+  contact:
+    heading: Contact Us
+    location: The Bioinformatics Lab @ UniSannio is located in via dei Mulini 74, 82100 Benevento, Italy.
+    happy: We are happy to hear from you!
+    through: "Get in touch through:"
+  modal:
+    journal: Journal
+    date: Date
+    category: Category
+    close: Close
+  categories:
+    news: news
+    publication: publication
+  months: [Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec]
+
+it:
+  html_lang: it
+  site_title: "Laboratorio di Bioinformatica @ UniSannio"
+  description: "Laboratorio di Bioinformatica dell'Università del Sannio"
+  lang_switch_title: "Read the site in English"
+  nav:
+    toggle: "Apri il menu"
+    about: Chi siamo
+    news: News
+    tools: Software
+    edutools: Didattica
+    facilities: Infrastrutture
+    people: Persone
+    theses: Tesi
+    contact: Contatti
+    gazzetta_title: "Gazzetta Bioinformatica: la rassegna settimanale della letteratura del laboratorio"
+  header:
+    lead: DST UniSannio
+    heading: Laboratorio di Bioinformatica
+    button: Scopri di più
+  about:
+    heading: Chi siamo
+    intro: >-
+      Il Laboratorio di Bioinformatica dell'Università del Sannio è diretto da
+      Luigi Cerulo e Francesco Napolitano e si occupa di biologia dei sistemi,
+      analisi di dati omici basata sull'intelligenza artificiale e drug
+      discovery computazionale.
+    areas:
+      - img: sysbio.png
+        title: Biologia dei sistemi
+        text: Esploriamo i dati biologici per svelare meccanismi molecolari complessi.
+      - img: ai.png
+        title: Analisi di dati omici con l'IA
+        text: Usiamo l'intelligenza artificiale per fare previsioni biologiche a partire dai dati omici.
+      - img: compdd.png
+        title: Drug discovery computazionale
+        text: Identifichiamo piccole molecole per applicazioni cliniche e di laboratorio.
+    history: >-
+      Le attività di ricerca in bioinformatica all'Università del Sannio sono
+      state avviate nel 2000 da Michele Ceccarelli, con un focus sullo studio dei
+      processi informatici nei sistemi biologici. Con la crescita esponenziale dei
+      dati biologici, il laboratorio si è orientato verso gli approcci di data
+      science in bioinformatica, sotto la co-direzione di Luigi Cerulo a partire
+      dal 2009. Dal 2021 il Laboratorio di Bioinformatica è diretto da Luigi
+      Cerulo e Francesco Napolitano e impiega tecniche avanzate per esplorare i
+      dati biologici, predire meccanismi molecolari e identificare nuovi farmaci
+      e bersagli terapeutici, contribuendo all'innovazione della ricerca in
+      bioinformatica.
+  news:
+    heading: News e pubblicazioni
+    new_publication: Nuova pubblicazione
+    read_paper: Leggi l'articolo
+    in: in
+  tools:
+    heading: Software
+    edu_heading: Strumenti didattici
+    website: Sito web
+    paper: Articolo
+  facilities:
+    heading: Infrastrutture
+    items:
+      - img: 3.jpg
+        title: Laboratorio informatico
+        text: 50 postazioni desktop con Ubuntu LTS e i principali strumenti bioinformatici per le attività di laboratorio.
+      - img: 1.jpg
+        title: Superdome Flex
+        text: 224 core CPU Intel(R) Xeon(R) Platinum 8280 @ 2.70GHz, 1,5 TB di RAM, 150 TB di storage, 1 GPU NVIDIA Tesla V100.
+      - img: 2.jpg
+        title: Cluster di server
+        text: Cluster di 7 server CPU e 1 unità GPU, per un totale di 400 core CPU, 4 TB di RAM, 600 TB di storage e 6 GPU NVIDIA. Ospitato presso Biogem - Istituto di Ricerche Genetiche "Gaetano Salvatore" ad Ariano Irpino (AV).
+  people:
+    heading: Persone
+    current: Membri attuali
+    former: Ex membri
+    position: Ruolo
+  theses:
+    heading: Tesi
+    author: Autore
+    degree: Corso di studi
+    academic_year: Anno accademico
+    download: Scarica
+  collaborations:
+    heading: Collaborazioni in corso
+  contact:
+    heading: Contatti
+    location: Il Laboratorio di Bioinformatica di UniSannio si trova in via dei Mulini 74, 82100 Benevento.
+    happy: Saremo felici di sentirti!
+    through: "Scrivici a:"
+  modal:
+    journal: Rivista
+    date: Data
+    category: Categoria
+    close: Chiudi
+  categories:
+    news: notizia
+    publication: pubblicazione
+  months: [gen, feb, mar, apr, mag, giu, lug, ago, set, ott, nov, dic]

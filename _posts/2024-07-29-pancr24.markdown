@@ -18,4 +18,17 @@ description: >
   to first-line chemotherapy, while low levels were associated with long-term
   survivors. A collaboration with the University of Foggia, Federico II
   University of Naples and Biogem.
+# Italian version (shown on /it/; English is used where a field is missing)
+headline_it: "Geni del centrosoma legati alla prognosi del tumore del pancreas"
+description_it: >
+  L'adenocarcinoma duttale del pancreas è tra le principali cause di morte
+  per cancro, e le sue cellule presentano spesso centrosomi anomali.
+  Analizzando dati pubblici di RNA-sequencing, lo studio ha identificato due
+  geni del centrosoma, CEP250 e CEP170, la cui elevata espressione è
+  associata a una prognosi peggiore, confermando i risultati su tessuti di
+  pazienti. In una piccola coorte di validazione, i pazienti con livelli
+  elevati di CEP250 hanno mostrato una sopravvivenza più breve e una
+  risposta rara alla chemioterapia di prima linea, mentre livelli bassi
+  erano associati ai lungo-sopravviventi. Una collaborazione con
+  l'Università di Foggia, l'Università Federico II di Napoli e Biogem.
 ---

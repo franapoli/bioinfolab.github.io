@@ -9,4 +9,11 @@ link: http://cibb2024.unisannio.it
 description: The 19th conference on Computational Intelligence
   methods for Bioinformatics and Biostatistics has just finished and was a great success! Find more info (and pictures) at
   <a href="http://cibb2024.unisannio.it">http://cibb2024.unisannio.it</a>!
+# Italian version (shown on /it/; English is used where a field is missing)
+title_it: CIBB 2024 è stato un successo!
+description_it: >
+  Si è appena conclusa la 19ª edizione della conferenza Computational
+  Intelligence methods for Bioinformatics and Biostatistics, con grande
+  successo! Informazioni (e foto) su
+  <a href="http://cibb2024.unisannio.it">http://cibb2024.unisannio.it</a>!
 ---

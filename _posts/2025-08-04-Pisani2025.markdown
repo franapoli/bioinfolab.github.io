@@ -19,4 +19,19 @@ description: >
   increased the expression of genetic payloads across several cell lines and
   delivery systems, including AAV and lentivirus. A collaboration led by Velia
   Siciliano's lab at IIT Naples, with TIGEM, Federico II and CNR.
+# Italian version (shown on /it/; English is used where a field is missing)
+headline_it: "Farmaci che potenziano le cellule ingegnerizzate, trovati al computer"
+description_it: >
+  Le cellule di mammifero ingegnerizzate con circuiti genetici sintetici sono
+  al centro della prossima generazione di bioterapie, ma la loro produttività
+  è limitata dalle risorse cellulari disponibili. Usando DECCODE, un metodo
+  computazionale di drug matching sviluppato dal Prof. Napolitano, gli autori
+  hanno confrontato il profilo trascrizionale di cellule che esprimono un
+  circuito capace di migliorarne le prestazioni con migliaia di profili
+  indotti da farmaci, alla ricerca di molecole che ne riproducano l'effetto
+  senza ulteriori modifiche genetiche. Il candidato migliore, il Filgotinib,
+  ha aumentato l'espressione dei payload genetici in diverse linee cellulari
+  e sistemi di delivery, tra cui AAV e lentivirus. Una collaborazione guidata
+  dal laboratorio di Velia Siciliano all'IIT di Napoli, con TIGEM, Federico
+  II e CNR.
 ---

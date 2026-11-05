@@ -9,4 +9,9 @@ pinned: false
 description: >
   Manuel obtained his Bachelor Degree in Biotechnology defending a
   thesis titled "A.I. and Pharmacology: a Knowledge Probing analysis on DeepSeek".
+# Italian version (shown on /it/; English is used where a field is missing)
+title_it: Congratulazioni Manuel Maio!
+description_it: >
+  Manuel ha conseguito la Laurea in Biotecnologie discutendo una tesi dal
+  titolo "I.A. e Farmacologia: un'analisi di Knowledge Probing su DeepSeek".
 ---

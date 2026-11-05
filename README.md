@@ -48,3 +48,20 @@ Customized for the Bioinfolab@UniSannio website.
 - Push the changes on the remote server (you need writing access):
     git push
 
+
+## Italian version
+
+The site is published in English (/) and Italian (/it/), with an EN | IT
+switch in the navbar.
+
+- Interface texts (menu, section titles, About, Facilities, Contact...) are
+  in `_data/i18n.yml`, under `en:` and `it:`.
+- News, people and tools are translated in the front matter of each file with
+  `_it` fields. If a field is missing, the English text is shown.
+    - news (`_posts`): `title_it`, `description_it`; publications also
+      `headline_it` (the paper title stays in English); optional `link_it`.
+    - people (`_team`): `position_it`, `bio_it` (Italian version of the text
+      below the front matter).
+    - tools (`_tools`, `_edutools`): `title_it`, `content_it`, `link_label_it`.
+- The Italian page is `it/index.html`; it uses the same layout as the English
+  one.

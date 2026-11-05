@@ -34,8 +34,8 @@
                             <hr class="star-primary">
                             <img width="40%" src="{{ site.baseurl }}/img/team/{{ member.pic }}.jpg" class="img-responsive img-centered" alt="{{ member.name }}">
                             <ul class="list-inline item-details">
-                                <li><strong>Position</strong>:
-                                    {{ member.position }}
+                                <li><strong>{{ t.people.position }}</strong>:
+                                    {% if lang == "it" and member.position_it %}{{ member.position_it }}{% else %}{{ member.position }}{% endif %}
                                 </li>
                                 {% if member.github %}
                                 <li><strong>GitHub</strong>:
@@ -56,8 +56,8 @@
                                 </li>
                                 {% endif %}
                             </ul>
-                            <p style="text-align: left !important;">{{ member.content }}</p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <p style="text-align: left !important;">{% if lang == "it" and member.bio_it %}{{ member.bio_it | markdownify }}{% else %}{{ member.content }}{% endif %}</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> {{ t.modal.close }}</button>
                         </div>
                     </div>
                 </div>

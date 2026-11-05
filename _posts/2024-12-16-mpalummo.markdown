@@ -6,4 +6,7 @@ thumbnail: ../team/mpalummo.jpg
 category: news
 modal: false
 description: Martina Palummo just joined our team as a postdoctoral researcher! More about her in the Team section below.
+# Italian version (shown on /it/; English is used where a field is missing)
+title_it: Benvenuta Martina!
+description_it: Martina Palummo è appena entrata nel nostro gruppo come ricercatrice postdoc! Trovi più informazioni su di lei nella sezione Persone qui sotto.
 ---

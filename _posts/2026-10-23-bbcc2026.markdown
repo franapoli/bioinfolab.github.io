@@ -13,4 +13,13 @@ description: >
   Computational Biology Conference, held at the Chiostro San Francesco in
   Naples on 21-23 October 2026. Joint work with Luigi Cerulo, Stefano M.
   Pagnotta and Francesco Napolitano.
+# Italian version (shown on /it/; English is used where a field is missing)
+title_it: Il nostro laboratorio a BBCC2026 a Napoli
+description_it: >
+  Martina Palummo ha presentato il nostro lavoro "Systematic prediction of
+  drug responsiveness across cancer cell lines based on machine learning from
+  DNA methylation profiles" a BBCC2026, la 21ª Bioinformatics and
+  Computational Biology Conference, tenutasi al Chiostro San Francesco di
+  Napoli dal 21 al 23 ottobre 2026. Lavoro congiunto con Luigi Cerulo,
+  Stefano M. Pagnotta e Francesco Napolitano.
 ---

@@ -8,4 +8,15 @@ modal: false
 link: https://www.kuijjerlab.org/research/
 pinned: false
 description: Marieke Kuijjer, Associate Professor in Cancer Data Science, iCAN Flagship, University of Helsinki, Finland, and Group Leader of the Computational Biology and Systems Medicine group at the Centre for Molecular Biosciences and Medicine Norway (NCMBM), Nordic EMBL Partnership, University of Oslo, Norway, visited our Lab for scientific exchanges. She presented her work on gene networks rewiring in cancer during a seminar to the Department of Science and Technology. This was a very productive exchange!
+# Italian version (shown on /it/; English is used where a field is missing)
+title_it: La Prof.ssa Marieke Kuijjer in visita al laboratorio!
+description_it: >
+  Marieke Kuijjer, Associate Professor in Cancer Data Science presso l'iCAN
+  Flagship dell'Università di Helsinki (Finlandia) e Group Leader del gruppo
+  Computational Biology and Systems Medicine al Centre for Molecular
+  Biosciences and Medicine Norway (NCMBM), Nordic EMBL Partnership,
+  Università di Oslo (Norvegia), ha visitato il nostro laboratorio per uno
+  scambio scientifico. Ha presentato il suo lavoro sul rimodellamento delle
+  reti geniche nel cancro in un seminario al Dipartimento di Scienze e
+  Tecnologie. È stato uno scambio molto proficuo!
 ---

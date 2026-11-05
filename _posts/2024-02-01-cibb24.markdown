@@ -10,4 +10,10 @@ pinned: false
 description: We are organizing the 19th conference on Computational Intelligence
   methods for Bioinformatics and Biostatistics. Find more info at
   <a href="http://cibb2024.unisannio.it">http://cibb2024.unisannio.it</a>!
+# Italian version (shown on /it/; English is used where a field is missing)
+title_it: Ospitiamo CIBB 2024!
+description_it: >
+  Stiamo organizzando la 19ª edizione della conferenza Computational
+  Intelligence methods for Bioinformatics and Biostatistics. Tutte le
+  informazioni su <a href="http://cibb2024.unisannio.it">http://cibb2024.unisannio.it</a>!
 ---

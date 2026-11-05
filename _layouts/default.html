@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html>
+{% assign lang = page.lang | default: "en" %}
+{% assign t = site.data.i18n[lang] %}
+<html lang="{{ t.html_lang }}">
 
   {% include head.html %}
 
@@ -9,8 +11,8 @@
     {% include header.html %}
     {% include services.html %}
     {% include portfolio_grid.html %}
-    {% include tools.html %}
-    {% include tools.html items=site.edutools id="edutools" title="Educational Tools" img_dir="edutools" col_class="col-md-4 col-sm-6" %}
+    {% include tools.html title=t.tools.heading %}
+    {% include tools.html items=site.edutools id="edutools" title=t.tools.edu_heading img_dir="edutools" col_class="col-md-4 col-sm-6" %}
     {% include facilities.html %}
     {% include team.html %}
     {% include theses.html %}

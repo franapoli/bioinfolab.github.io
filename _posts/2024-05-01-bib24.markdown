@@ -18,4 +18,18 @@ description: >
   molecules tested in breast cancer cell lines proved effective, among them
   triptolide, OTS-167 and quinacrine. A collaboration with KAUST (Saudi
   Arabia) and CNR-IEOS Naples.
+# Italian version (shown on /it/; English is used where a field is missing)
+headline_it: "L'IA trova farmaci che spingono le cellule staminali del cancro al seno a differenziarsi"
+description_it: >
+  Le cellule staminali tumorali sono una piccola popolazione con
+  caratteristiche staminali all'interno dei tumori, e indurne il
+  differenziamento è una strada promettente verso la remissione a lungo
+  termine. In questo lavoro, una rete neurale profonda addestrata su dati
+  single-cell di cellule staminali pluripotenti umane è stata usata per
+  analizzare migliaia di profili di espressione indotti da farmaci del
+  database LINCS, con l'adversarial learning a rimuovere il bias tra i due
+  tipi di dati. Cinque delle sei molecole meglio classificate, testate su
+  linee cellulari di cancro al seno, si sono dimostrate efficaci, tra cui
+  triptolide, OTS-167 e chinacrina. Una collaborazione con KAUST (Arabia
+  Saudita) e CNR-IEOS Napoli.
 ---

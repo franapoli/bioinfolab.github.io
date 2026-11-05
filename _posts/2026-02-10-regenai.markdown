@@ -13,4 +13,14 @@ description: >
   National Interest (PRIN). The project aims to identify therapeutic molecules
   in the context of Retinitis Pigmentosa, a degenerative disease of the eye
   causing loss of vision. More info at the linked website.
+# Italian version (shown on /it/; English is used where a field is missing)
+title_it: Il progetto RegenAI verso la conclusione
+link_it: https://franapoli.github.io/bioinfolab.github.io/regenai-it.html
+description_it: >
+  RegenAI è un progetto co-diretto dal Prof. Napolitano in collaborazione con
+  l'Università Federico II di Napoli e finanziato come Progetto di Rilevante
+  Interesse Nazionale (PRIN). Il progetto mira a identificare molecole
+  terapeutiche per la retinite pigmentosa, una malattia degenerativa
+  dell'occhio che causa la perdita della vista. Maggiori informazioni sul
+  sito collegato.
 ---

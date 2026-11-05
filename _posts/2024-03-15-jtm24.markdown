@@ -18,4 +18,17 @@ description: >
   predicts the clinical stage of the disease from RNA-Seq data. A
   collaboration with Federico II University of Naples, Biogem, CNR, IRCCS
   SYNLAB SDN and the University of Miami.
+# Italian version (shown on /it/; English is used where a field is missing)
+headline_it: "Nuovi candidati farmaci e un punteggio di rischio per l'artrosi"
+description_it: >
+  L'artrosi colpisce una larga parte della popolazione di mezza età e le
+  terapie attuali sono ancora poco efficaci. Combinando tre coorti di
+  pazienti, lo studio ha ricavato una firma condivisa di 44 geni coinvolti
+  nella malattia. Una prioritizzazione dei farmaci basata sulle reti ha
+  indicato candidati come resveratrolo, tenoxicam e mesalazina, e sette geni
+  bersaglio sono stati confermati in vitro. Gli autori propongono inoltre un
+  punteggio di rischio basato su appena otto geni, che predice lo stadio
+  clinico della malattia a partire da dati RNA-Seq. Una collaborazione con
+  l'Università Federico II di Napoli, Biogem, CNR, IRCCS SYNLAB SDN e
+  l'Università di Miami.
 ---

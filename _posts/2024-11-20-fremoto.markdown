@@ -7,4 +7,7 @@ category: news
 modal: false
 link: https://www.futuroremoto.eu
 description: The lab will be present at FuturoRemoto 2024 to showcase bioinformatics applications to middle and high-school students.
+# Italian version (shown on /it/; English is used where a field is missing)
+title_it: Futuro Remoto
+description_it: Il laboratorio sarà presente a Futuro Remoto 2024 per mostrare le applicazioni della bioinformatica agli studenti delle scuole medie e superiori.
 ---

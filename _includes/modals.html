@@ -1,5 +1,12 @@
 <!-- Portfolio Modals -->
 {% for post in site.posts %}
+    {% assign p_title = post.title %}{% assign p_desc = post.description %}{% assign p_cat = post.category %}
+    {% if lang == "it" %}
+      {% assign p_title = post.title_it | default: post.title %}
+      {% assign p_desc = post.description_it | default: post.description %}
+    {% endif %}
+    {% if post.category and t.categories[post.category] %}{% assign p_cat = t.categories[post.category] %}{% endif %}
+    {% assign p_layout = t.categories[post.layout] | default: post.layout %}
     <div class="portfolio-modal modal fade" id="portfolioModal{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -11,40 +18,40 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>{{ post.title }}</h2>
+                            <h2>{{ p_title }}</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-                            <p style="text-align: left;">{{ post.description }}</p>
+                            <img src="{{ site.baseurl }}/img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                            <p style="text-align: left;">{{ p_desc }}</p>
                             <ul class="list-inline item-details">
                                 {% if post.layout == 'publication' %}
-                                    <li>Journal:
+                                    <li>{{ t.modal.journal }}:
                                         <strong><a href="{{ post.posturl }}">{{ post.journal }}</a></strong>
                                     </li>
-                                    <li>Date:
+                                    <li>{{ t.modal.date }}:
                                         <strong>{{ post.project-date }}</strong>
                                     </li>
-                                    <li>Category:
-                                        <strong>{{ post.layout }}</strong>
+                                    <li>{{ t.modal.category }}:
+                                        <strong>{{ p_layout }}</strong>
                                     </li>
                                 {% elsif post.layout == 'news' %}
-                                    <li>Date:
+                                    <li>{{ t.modal.date }}:
                                         <strong>{{ post.project-date }}</strong>
                                     </li>
-                                    <li>Category:
-                                        <strong>{{ post.category }}</strong>
+                                    <li>{{ t.modal.category }}:
+                                        <strong>{{ p_cat }}</strong>
                                     </li>
                                     <!-- Add any additional fields specific to the news layout here -->
                                 {% else %}
-                                    <li>Date:
+                                    <li>{{ t.modal.date }}:
                                         <strong>{{ post.project-date }}</strong>
                                     </li>
-                                    <li>Category:
-                                        <strong>{{ post.category }}</strong>
+                                    <li>{{ t.modal.category }}:
+                                        <strong>{{ p_cat }}</strong>
                                     </li>
                                     <!-- Add any default fields here -->
                                 {% endif %}
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> {{ t.modal.close }}</button>
                         </div>
                     </div>
                 </div>

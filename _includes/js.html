@@ -16,3 +16,13 @@
     <!-- Custom Theme JavaScript -->
     <script src="{{ "/js/agency.js" | prepend: site.baseurl }}"></script>
     <script src="{{ "/js/news-grid.js" | prepend: site.baseurl }}"></script>
+
+    <!-- Language switch: keep the current section (#anchor) when changing language -->
+    <script>
+    $('.lang-switch-link').on('click', function () {
+        var section = $('.navbar-nav li.active > a.page-scroll').attr('href');
+        if (section && section.charAt(0) === '#') {
+            this.href = this.href.split('#')[0] + section;
+        }
+    });
+    </script>

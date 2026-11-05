@@ -16,4 +16,18 @@ description: >
   bioinformatics side of forensic genetics in our computer lab, seeing how
   DNA evidence collected on a crime scene is actually analyzed computationally
   rather than in a wet lab.
+# Italian version (shown on /it/; English is used where a field is missing)
+title_it: UniSannio Summer School - Biotech Crime Lab, il DNA non mente
+description_it: >
+  Il nostro laboratorio partecipa alla UniSannio Summer School "Scienze e
+  Tecnologie", dedicata quest'anno alle indagini sulla scena del crimine
+  ("Prova a prendermi: dall'analisi delle tracce alla ricostruzione della
+  dinamica del movimento sulla scena del crimine attraverso un approccio
+  scientifico integrato"). Curiamo la sessione conclusiva, "Biotech Crime
+  Lab: il DNA non mente", giovedì 16 luglio 2026 (9:30-12:30), dedicata alla
+  fase di analisi del DNA dell'indagine. Nel nostro laboratorio informatico
+  gli studenti metteranno le mani sul lato bioinformatico della genetica
+  forense, scoprendo come le tracce di DNA raccolte sulla scena del crimine
+  vengono effettivamente analizzate al computer anziché in un laboratorio
+  sperimentale.
 ---

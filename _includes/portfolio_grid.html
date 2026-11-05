@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">News and Publications</h2>
+                <h2 class="section-heading">{{ t.news.heading }}</h2>
                 <h3 class="section-subheading text-muted"><br></h3>
             </div>
         </div>
@@ -19,11 +19,20 @@
 {% assign posts = pinned_posts | concat: unpinned_posts %}
 
           {% for post in posts %}
+            {% comment %} Localized fields: *_it in the post front matter, English as fallback {% endcomment %}
+            {% assign p_title = post.title %}{% assign p_headline = post.headline %}{% assign p_desc = post.description %}{% assign p_link = post.link %}
+            {% if lang == "it" %}
+              {% assign p_title = post.title_it | default: post.title %}
+              {% assign p_headline = post.headline_it | default: post.headline %}
+              {% assign p_desc = post.description_it | default: post.description %}
+              {% assign p_link = post.link_it | default: post.link %}
+            {% endif %}
+            {% assign p_month = post.date | date: "%-m" | minus: 1 %}
             <div class="col-md-4 col-sm-6 portfolio-item">
               <div class="portfolio-date">
                 {% if post.pinned %}<i class="fa fa-thumb-tack"></i>{% endif %}
                 {% if post.layout == "publication" %}<i class="fa fa-book"></i>{% elsif post.layout == "news" %}<i class="fa fa-newspaper-o"></i>{% endif %}
-                {{ post.date | date_to_string }}
+                {{ post.date | date: "%d" }} {{ t.months[p_month] }} {{ post.date | date: "%Y" }}
               </div>
               {% if post.modal == true %}
                 <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
@@ -32,37 +41,37 @@
                           <i class="fa fa-plus fa-3x"></i>
                       </div>
                   </div>
-                  <img src="img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
+                  <img src="{{ site.baseurl }}/img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
                 </a>
               {% else %}
-                <a href="{{ post.link }}" class="portfolio-link" target="_blank">
+                <a href="{{ p_link }}" class="portfolio-link" target="_blank">
                   <div class="portfolio-hover">
                       <div class="portfolio-hover-content">
                           <i class="fa fa-external-link fa-3x"></i>
                       </div>
                   </div>
-                  <img src="img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
+                  <img src="{{ site.baseurl }}/img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
                 </a>
               {% endif %}
                 <div class="portfolio-caption">
-                    {% if post.layout == "publication" and post.headline %}
-                    <span class="news-kicker">New publication</span>
-                    <h5 class="news-headline">{{ post.headline }}</h5>
-                    {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+                    {% if post.layout == "publication" and p_headline %}
+                    <span class="news-kicker">{{ t.news.new_publication }}</span>
+                    <h5 class="news-headline">{{ p_headline }}</h5>
+                    {% if p_desc %}<p>{{ p_desc }}</p>{% endif %}
                     <div class="pub-ref">
                         <p class="pub-title">&ldquo;{{ post.title }}&rdquo;</p>
                         <p class="pub-journal">{{ post.journal }}</p>
                         {% if post.authors %}<p class="pub-authors">{{ post.authors }}</p>{% endif %}
                         {% if post.affiliations %}<p class="pub-affiliations">{{ post.affiliations }}</p>{% endif %}
-                        {% if post.link %}<a class="pub-ref-link" href="{{ post.link }}" target="_blank" rel="noopener">Read the paper <i class="fa fa-external-link"></i></a>{% endif %}
+                        {% if p_link %}<a class="pub-ref-link" href="{{ p_link }}" target="_blank" rel="noopener">{{ t.news.read_paper }} <i class="fa fa-external-link"></i></a>{% endif %}
                     </div>
                     {% elsif post.layout == "publication" %}
-                    <h5><i>"{{ post.title }}"</i>, in <strong style="font-weight: 700 !important;">{{ post.journal }}</strong></h5>
+                    <h5><i>"{{ post.title }}"</i>, {{ t.news.in }} <strong style="font-weight: 700 !important;">{{ post.journal }}</strong></h5>
                     {% if post.authors %}<p class="pub-authors">{{ post.authors }}</p>{% endif %}
                     {% if post.affiliations %}<p class="pub-affiliations">{{ post.affiliations }}</p>{% endif %}
                     {% else %}
-                    <h5 class="news-headline">{{ post.title }}</h5>
-                    {% unless post.modal %}<p>{{ post.description }}</p>{% endunless %}
+                    <h5 class="news-headline">{{ p_title }}</h5>
+                    {% unless post.modal %}<p>{{ p_desc }}</p>{% endunless %}
                     {% endif %}
                 </div>
             </div>
