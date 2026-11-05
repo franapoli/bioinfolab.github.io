@@ -199,6 +199,16 @@ layout: style
   }
 }
 
+/* At the top of the page the lab name and the menu always sit on two rows,
+   in both languages; once the bar shrinks on scroll they share one line
+   (from 1200px). Without this the shorter English menu could already fit
+   next to the big title, and the shrink would change nothing. */
+@media (min-width: 768px) {
+  .navbar-default:not(.navbar-shrink) .navbar-header {
+    float: none;
+  }
+}
+
 /* Language switch (EN | IT). The current language is shown in yellow, the
    other one is a link to the translated page. On phones it sits next to the
    menu button, so it is reachable without opening the menu. */
