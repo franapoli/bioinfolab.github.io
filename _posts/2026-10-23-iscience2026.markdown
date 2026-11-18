@@ -1,0 +1,38 @@
+---
+title: Centrosome depletion reprograms RNA splicing to promote neuroblastoma differentiation through SR factor dephosphorylation
+layout: publication
+journal: iScience
+authors: "G. Cipolletta, <strong>L. Faretra</strong>, G. Puopolo, A. Mellone, <strong>M. Nigro</strong>, P. Salerno, <strong>A. Ammendola</strong>, A. d'Amati, G. Ingravallo, A. Remo, R. Uzbekov, H. Wu, P. Parente, L. Ferrante, G. Gitano, B. Franco, P. Carotenuto, G. Merla, <strong>F. Napolitano</strong>, <strong>L. Cerulo</strong>, M. Pancione"
+affiliations: "University of Sannio · University of Naples Federico II · TIGEM · IRCCS Casa Sollievo della Sofferenza · Biogem · University of Verona · University of Bari · Policlinico Gemelli IRCCS · Université de Tours · Complutense University of Madrid"
+img: iscience2026.jpg
+thumbnail: iscience2026.jpg
+link: https://www.cell.com/iscience/fulltext/S2589-0042(26)03555-8
+headline: "Fewer centrosomes, more mature neurons: centrosome loss rewires RNA splicing"
+description: >
+  Centrosomes organize cell division, but they may also help decide what a
+  cell becomes. In neuroblastoma stem cells, this study found splicing
+  components such as the U2 and U5 snRNAs and the splicing factor SRSF2 at
+  the centrosome's subdistal appendages. Removing centrosomes before
+  retinoic acid treatment made the cells mature into neurons more
+  efficiently, and this went together with more intron retention and with
+  the dephosphorylation of SR splicing factors at the centrosome. Our lab
+  carried out the bioinformatic analyses, led by Luca Faretra and Marco
+  Nigro, in a study coordinated by Massimo Pancione with partners at the
+  University of Naples Federico II, TIGEM and IRCCS Casa Sollievo della
+  Sofferenza.
+# Italian version (shown on /it/; English is used where a field is missing)
+headline_it: "Meno centrosomi, neuroni più maturi: la perdita del centrosoma riprogramma lo splicing"
+description_it: >
+  I centrosomi organizzano la divisione cellulare, ma potrebbero anche
+  contribuire a decidere il destino di una cellula. Nelle cellule staminali
+  di neuroblastoma, questo studio ha trovato componenti dello splicing come
+  gli snRNA U2 e U5 e il fattore di splicing SRSF2 sulle appendici
+  subdistali del centrosoma. Eliminare i centrosomi prima del trattamento con
+  acido retinoico ha reso più efficiente la maturazione delle cellule in
+  neuroni, insieme a un aumento della ritenzione intronica e alla
+  defosforilazione dei fattori di splicing SR al centrosoma. Il nostro
+  laboratorio ha curato le analisi bioinformatiche, condotte da Luca Faretra
+  e Marco Nigro, in uno studio coordinato da Massimo Pancione con partner
+  dell'Università di Napoli Federico II, del TIGEM e dell'IRCCS Casa
+  Sollievo della Sofferenza.
+---
